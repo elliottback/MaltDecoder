@@ -8,10 +8,12 @@ const selectors = [
 function replaceDistilleryNames( data ) {
     var elems = [];
 
-    selectors.forEach( function( selector )
+    for( var idx = 0; idx < selectors.length; idx++ )
     {
-        elems.append( document.querySelectorAll(selector) );
-    } );
+        var items = document.querySelectorAll( selectors[ idx ] );
+        if( items )
+            elems.append( items );
+    }
 
     for( var idx = 0 ; idx < elems.length; idx++ )
     {
