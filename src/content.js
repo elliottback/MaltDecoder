@@ -6,14 +6,7 @@ const selectors = [
 ];
 
 function replaceDistilleryNames( data ) {
-    var elems = [];
-
-    for( var idx = 0; idx < selectors.length; idx++ )
-    {
-        var items = document.querySelectorAll( selectors[ idx ] );
-        if( items )
-            elems.append( items );
-    }
+    var elems = document.querySelectorAll( selectors.join(",") );
 
     for( var idx = 0 ; idx < elems.length; idx++ )
     {
