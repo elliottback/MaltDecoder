@@ -20,7 +20,7 @@ function replaceDistilleryNames( data ) {
 
         for( const [key, value] of Object.entries(data) )
         {
-            var text = elem.innerText.replace(/CASK[\s]*No.[\s*]/ig,'').trim();
+            var text = elem.innerText.trim();
             var reg = new RegExp( "" + key + "\\.[0-9]+" );
 
             if( text.match( reg ) )
