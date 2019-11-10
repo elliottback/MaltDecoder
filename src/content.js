@@ -15,7 +15,7 @@ function replaceDistilleryNames( data ) {
         for( const [key, value] of Object.entries(data) )
         {
             var text = elem.innerText;
-            var reg = new RegExp(key + "\.");
+            var reg = new RegExp("^" + key + "\\.");
 
             if( text.match( reg ) )
             {
