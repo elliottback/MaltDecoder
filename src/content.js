@@ -18,9 +18,10 @@ function replaceDistilleryNames( data ) {
     {
         var elem = elems[idx];
 
-        for( const [key, value] of Object.entries(data) )
+        // we need to try to match the longest ones first, since regex is weak and we want it to be opportunistic
+        for( const [key, value] of Object.entries(data).sort((a, b) => b.length - a.length ) )
         {
-            var text = elem.innerText.trim();
+            var text = elem.innerText.replace(/CASK[\s]*No.[\s*]/ig,'').trim();
             var reg = new RegExp( "" + key + "\\.[0-9]+" );
 
             if( text.match( reg ) )
