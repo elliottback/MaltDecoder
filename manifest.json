@@ -23,10 +23,10 @@
       "js": [
         "/src/content.js"
       ],
-      "web_accessible_resources": [
-        "data/data.json"
-      ],
       "run_at": "document_end"
     }
+  ],
+  "web_accessible_resources": [
+    "data/data.json"
   ]
 }
