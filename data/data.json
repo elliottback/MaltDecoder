@@ -1,0 +1,902 @@
+{
+  "1": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glenfarclas",
+    "type": "Single Malt"
+  },
+  "2": {
+    "status": "active",
+    "region": "speyside",
+    "name": "The Glenlivet",
+    "type": "Single Malt"
+  },
+  "3": {
+    "status": "active",
+    "region": "islay",
+    "name": "Bowmore",
+    "type": "Single Malt"
+  },
+  "4": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Highland Park",
+    "type": "Single Malt"
+  },
+  "5": {
+    "status": "active",
+    "region": "lowlands",
+    "name": "Auchentoshan",
+    "type": "Single Malt"
+  },
+  "6": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glen Deveron / Macduff",
+    "type": "Single Malt"
+  },
+  "7": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Longmorn",
+    "type": "Single Malt"
+  },
+  "8": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Tamdhu",
+    "type": "Single Malt"
+  },
+  "9": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glen Grant",
+    "type": "Single Malt"
+  },
+  "10": {
+    "status": "active",
+    "region": "islay",
+    "name": "Bunnahabhain",
+    "type": "Single Malt"
+  },
+  "11": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Tomatin",
+    "type": "Single Malt"
+  },
+  "12": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Benriach",
+    "type": "Single Malt"
+  },
+  "13": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Dalmore",
+    "type": "Single Malt"
+  },
+  "14": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Talisker",
+    "type": "Single Malt"
+  },
+  "15": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glenfiddich",
+    "type": "Single Malt"
+  },
+  "16": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Glenturret",
+    "type": "Single Malt"
+  },
+  "17": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Scapa",
+    "type": "Single Malt"
+  },
+  "18": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Inchgower",
+    "type": "Single Malt"
+  },
+  "19": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Glen Garioch",
+    "type": "Single Malt"
+  },
+  "20": {
+    "status": "closed",
+    "region": "lowlands",
+    "name": "Inverleven",
+    "type": "Single Malt"
+  },
+  "21": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glenglassaugh",
+    "type": "Single Malt"
+  },
+  "22": {
+    "status": "active",
+    "region": "lowlands",
+    "name": "Glenkinchie",
+    "type": "Single Malt"
+  },
+  "23": {
+    "status": "active",
+    "region": "islay",
+    "name": "Bruichladdich",
+    "type": "Single Malt"
+  },
+  "24": {
+    "status": "active",
+    "region": "speyside",
+    "name": "The Macallan",
+    "type": "Single Malt"
+  },
+  "25": {
+    "status": "closed",
+    "region": "lowlands",
+    "name": "Rosebank",
+    "type": "Single Malt"
+  },
+  "26": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Clynelish",
+    "type": "Single Malt"
+  },
+  "27": {
+    "status": "active",
+    "region": "campbeltown",
+    "name": "Springbank",
+    "type": "Single Malt"
+  },
+  "28": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Tullibardine",
+    "type": "Single Malt"
+  },
+  "29": {
+    "status": "active",
+    "region": "islay",
+    "name": "Laphroaig",
+    "type": "Single Malt"
+  },
+  "30": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glenrothes",
+    "type": "Single Malt"
+  },
+  "31": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Isle of Jura",
+    "type": "Single Malt"
+  },
+  "32": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Edradour",
+    "type": "Single Malt"
+  },
+  "33": {
+    "status": "active",
+    "region": "islay",
+    "name": "Ardbeg",
+    "type": "Single Malt"
+  },
+  "34": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Tamnavulin",
+    "type": "Single Malt"
+  },
+  "35": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glen Moray",
+    "type": "Single Malt"
+  },
+  "36": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Benrinnes",
+    "type": "Single Malt"
+  },
+  "37": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Cragganmore",
+    "type": "Single Malt"
+  },
+  "38": {
+    "status": "closed",
+    "region": "speyside",
+    "name": "Caperdonich",
+    "type": "Single Malt"
+  },
+  "39": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Linkwood",
+    "type": "Single Malt"
+  },
+  "40": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Balvenie",
+    "type": "Single Malt"
+  },
+  "41": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Dailuaine",
+    "type": "Single Malt"
+  },
+  "42": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Ledaig / Tobermory",
+    "type": "Single Malt"
+  },
+  "43": {
+    "status": "closed",
+    "region": "islay",
+    "name": "Port Ellen",
+    "type": "Single Malt"
+  },
+  "44": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Craigellachie",
+    "type": "Single Malt"
+  },
+  "45": {
+    "status": "closed",
+    "region": "speyside",
+    "name": "Dallas Dhu",
+    "type": "Single Malt"
+  },
+  "46": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glenlossie",
+    "type": "Single Malt"
+  },
+  "47": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Benromach",
+    "type": "Single Malt"
+  },
+  "48": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Balmenach",
+    "type": "Single Malt"
+  },
+  "49": {
+    "status": "closed",
+    "region": "lowlands",
+    "name": "Linlithgow / St Magdalene",
+    "type": "Single Malt"
+  },
+  "50": {
+    "status": "active",
+    "region": "lowlands",
+    "name": "Bladnoch",
+    "type": "Single Malt"
+  },
+  "51": {
+    "status": "active",
+    "region": "ireland",
+    "name": "Bushmills",
+    "type": "Single Malt"
+  },
+  "52": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Old Pulteney",
+    "type": "Single Malt"
+  },
+  "53": {
+    "status": "active",
+    "region": "islay",
+    "name": "Caol Ila",
+    "type": "Single Malt"
+  },
+  "54": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Aberlour",
+    "type": "Single Malt"
+  },
+  "55": {
+    "status": "closed",
+    "region": "highlands",
+    "name": "Royal Brackla",
+    "type": "Single Malt"
+  },
+  "56": {
+    "status": "closed",
+    "region": "speyside",
+    "name": "Coleburn",
+    "type": "Single Malt"
+  },
+  "57": {
+    "status": "closed",
+    "region": "speyside",
+    "name": "Glen Mhor",
+    "type": "Single Malt"
+  },
+  "58": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Strathisla",
+    "type": "Single Malt"
+  },
+  "59": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Teaninich",
+    "type": "Single Malt"
+  },
+  "60": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Aberfeldy",
+    "type": "Single Malt"
+  },
+  "61": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Brora",
+    "type": "Single Malt"
+  },
+  "62": {
+    "status": "closed",
+    "region": "highlands",
+    "name": "Glenlochy",
+    "type": "Single Malt"
+  },
+  "63": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glentauchers",
+    "type": "Single Malt"
+  },
+  "64": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Mannochmore",
+    "type": "Single Malt"
+  },
+  "65": {
+    "status": "closed",
+    "region": "speyside",
+    "name": "Imperial",
+    "type": "Single Malt"
+  },
+  "66": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Ardmore",
+    "type": "Single Malt"
+  },
+  "67": {
+    "status": "closed",
+    "region": "highlands",
+    "name": "Banff",
+    "type": "Single Malt"
+  },
+  "68": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Blair Athol",
+    "type": "Single Malt"
+  },
+  "69": {
+    "status": "closed",
+    "region": "highlands",
+    "name": "Glen Albyn",
+    "type": "Single Malt"
+  },
+  "70": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Balblair",
+    "type": "Single Malt"
+  },
+  "71": {
+    "status": "closed",
+    "region": "speyside",
+    "name": "Glenburgie / Glencraig",
+    "type": "Single Malt"
+  },
+  "72": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Miltonduff",
+    "type": "Single Malt"
+  },
+  "73": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Aultmore",
+    "type": "Single Malt"
+  },
+  "74": {
+    "status": "closed",
+    "region": "highlands",
+    "name": "North Port",
+    "type": "Single Malt"
+  },
+  "75": {
+    "status": "closed",
+    "region": "highlands",
+    "name": "Glenury",
+    "type": "Single Malt"
+  },
+  "76": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Mortlach",
+    "type": "Single Malt"
+  },
+  "77": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Glen Ord / Glenordie",
+    "type": "Single Malt"
+  },
+  "78": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Ben Nevis",
+    "type": "Single Malt"
+  },
+  "79": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Deanston",
+    "type": "Single Malt"
+  },
+  "80": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glen Spey",
+    "type": "Single Malt"
+  },
+  "81": {
+    "status": "closed",
+    "region": "speyside",
+    "name": "Glen Keith",
+    "type": "Single Malt"
+  },
+  "82": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Glencadam",
+    "type": "Single Malt"
+  },
+  "83": {
+    "status": "closed",
+    "region": "speyside",
+    "name": "Convalmore",
+    "type": "Single Malt"
+  },
+  "84": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glendullan",
+    "type": "Single Malt"
+  },
+  "85": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glen Elgin",
+    "type": "Single Malt"
+  },
+  "86": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Glenesk",
+    "type": "Single Malt"
+  },
+  "87": {
+    "status": "closed",
+    "region": "highlands",
+    "name": "Millburn",
+    "type": "Single Malt"
+  },
+  "88": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Speyburn",
+    "type": "Single Malt"
+  },
+  "89": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Tomintoul",
+    "type": "Single Malt"
+  },
+  "90": {
+    "status": "closed",
+    "region": "speyside",
+    "name": "Pittyvaich",
+    "type": "Single Malt"
+  },
+  "91": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Dufftown",
+    "type": "Single Malt"
+  },
+  "92": {
+    "status": "closed",
+    "region": "highlands",
+    "name": "Lochside",
+    "type": "Single Malt"
+  },
+  "93": {
+    "status": "active",
+    "region": "campbeltown",
+    "name": "Glen Scotia",
+    "type": "Single Malt"
+  },
+  "94": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Fettercairn",
+    "type": "Single Malt"
+  },
+  "95": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Auchroisk",
+    "type": "Single Malt"
+  },
+  "96": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glendronach",
+    "type": "Single Malt"
+  },
+  "97": {
+    "status": "closed",
+    "region": "lowlands",
+    "name": "Littlemill",
+    "type": "Single Malt"
+  },
+  "98": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Loch Lomond",
+    "type": "Single Malt"
+  },
+  "99": {
+    "status": "closed",
+    "region": "highlands",
+    "name": "Glenugie",
+    "type": "Single Malt"
+  },
+  "100": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Strathmill",
+    "type": "Single Malt"
+  },
+  "101": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Knockando",
+    "type": "Single Malt"
+  },
+  "102": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Dalwhinnie",
+    "type": "Single Malt"
+  },
+  "103": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Royal Lochnagar",
+    "type": "Single Malt"
+  },
+  "104": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glen Craig",
+    "type": "Single Malt"
+  },
+  "105": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Tormore",
+    "type": "Single Malt"
+  },
+  "106": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Cardhu",
+    "type": "Single Malt"
+  },
+  "107": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Glenallachie",
+    "type": "Single Malt"
+  },
+  "108": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Allt-a'Bhainne",
+    "type": "Single Malt"
+  },
+  "109": {
+    "status": "closed",
+    "region": "speyside",
+    "name": "Mosstowie",
+    "type": "Single Malt"
+  },
+  "110": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Oban",
+    "type": "Single Malt"
+  },
+  "111": {
+    "status": "active",
+    "region": "islay",
+    "name": "Lagavulin",
+    "type": "Single Malt"
+  },
+  "112": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Inchmurrin",
+    "type": "Single Malt"
+  },
+  "113": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Braeval / Braes of Glenlivet",
+    "type": "Single Malt"
+  },
+  "114": {
+    "status": "active",
+    "region": "campbeltown",
+    "name": "Longrow",
+    "type": "Single Malt"
+  },
+  "115": {
+    "status": "active",
+    "region": "speyside",
+    "name": "Knockdhu",
+    "type": "Single Malt"
+  },
+  "116": {
+    "status": "active",
+    "region": "japan",
+    "name": "Nikka Distilleries",
+    "type": "Single Malt"
+  },
+  "117": {
+    "status": "active",
+    "region": "ireland",
+    "name": "Cooley",
+    "type": "Single Malt"
+  },
+  "118": {
+    "status": "active",
+    "region": "ireland",
+    "name": "Connemara",
+    "type": "Single Malt"
+  },
+  "119": {
+    "status": "active",
+    "region": "japan",
+    "name": "Yamazaki",
+    "type": "Single Malt"
+  },
+  "120": {
+    "status": "active",
+    "region": "japan",
+    "name": "Hakushu",
+    "type": "Single Malt"
+  },
+  "121": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Isle of Arran",
+    "type": "Single Malt"
+  },
+  "122": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Croftengea",
+    "type": "Single Malt"
+  },
+  "123": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Glengoyne",
+    "type": "Single Malt"
+  },
+  "124": {
+    "status": "active",
+    "region": "japan",
+    "name": "Niyagikyo",
+    "type": "Single Malt"
+  },
+  "125": {
+    "status": "active",
+    "region": "highlands",
+    "name": "Glenmorangie",
+    "type": "Single Malt"
+  },
+  "126": {
+    "status": "active",
+    "region": "campbeltown",
+    "name": "Hazelburn",
+    "type": "Single Malt"
+  },
+  "127": {
+    "status": "active",
+    "region": "islay",
+    "name": "Port Charlotte",
+    "type": "Single Malt"
+  },
+  "128": {
+    "status": "active",
+    "region": "wales",
+    "name": "Penderyn",
+    "type": "Single Malt"
+  },
+  "129": {
+    "status": "active",
+    "region": "islay",
+    "name": "Kilchoman",
+    "type": "Single Malt"
+  },
+  "130": {
+    "status": "active",
+    "region": "japan",
+    "name": "Chichibu",
+    "type": "Single Malt"
+  },
+  "131": {
+    "status": "closed",
+    "region": "japan",
+    "name": "Hanyu",
+    "type": "Single Malt"
+  },
+  "132": {
+    "status": "closed",
+    "region": "japan",
+    "name": "Karuizawa",
+    "type": "Single Malt"
+  },
+  "133": {
+    "status": "active",
+    "region": "Washington, USA",
+    "name": "Westland",
+    "type": "Single Malt"
+  },
+  "134": {
+    "status": "active",
+    "region": "India",
+    "name": "Paul John",
+    "type": "Single Malt"
+  },
+  "135": {
+    "status":"active",
+    "region":"Highland",
+    "name": "Loch Lomond (Inchmoan)",
+    "type": "Single Malt"
+  },
+  "136": {
+    "status":"active",
+    "region":"Lowland",
+    "name":"Eden Mill",
+    "type": "Single Malt"
+  },
+  "137": {
+    "status":"active",
+    "region":"England",
+    "name":"St. George’s (The English Whisky Co.)",
+    "type": "Single Malt"
+  },
+  "138": {
+    "status":"active",
+    "region":"Taiwan",
+    "name":"Nantou",
+    "type": "Single Malt"
+  },
+  "139": {
+    "status":"active",
+    "region":"Taiwan",
+    "name":"Kavalan",
+    "type": "Single Malt"
+  },
+  "140": {
+    "status":"active",
+    "region":"Texas, USA",
+    "name":"Balcones",
+    "type": "Single Malt"
+  },
+  "141": {
+    "status":"active",
+    "region":"Denmark",
+    "name":"Fary Lochan",
+    "type": "Single Malt"
+  },
+  Grain
+  G1	North British	Lowland
+  G2	Carsebridge	Lowland	Closed
+  G3	Caledonian	Lowland	Closed
+  G4	Cameronbridge	Lowland
+  G5	Invergordon	Highland
+  G6	Port Dundas	Lowland	Closed
+  G7	Girvan	Lowland
+  G8	Cambus	Lowland	Closed
+  G9	Loch Lomond	Highland
+  G10	Strathclyde	Lowland
+  G11	Nikka Coffey Grain	Japan
+  G12	Nikka Coffey Malt	Japan	This is malt whisky, but still tagged as grain
+  G13	Chita	Japan
+  G14	Dumbarton	Lowland	Closed
+  G15	Loch Lomond (Rhosdhu)	Highland,
+Bourbon
+  B1	Heaven Hill	Kentucky, USA
+  B2	New Bernheim	Kentucky, USA
+  B3	Rock Town	Arkansas, USA
+  B4	FEW Spirits	Illinois, USA
+  B5	George Dickel (Cascade Hollow)	Tennessee, USA,
+  Rye
+  RW1	FEW Spirits	Illinois, USA,
+  Rum
+  R1	Monymusk	Jamaica
+  R2	Demerara Distillers (El Dorado)	Guyana
+  R3	West Indies Rum	Barbados
+  R4	Trinidad Distillers (Angostura)	Trinidad
+  R5	Long Pond	Jamaica
+  R6	Foursquare	Barbados
+  R7	Hampden	Jamaica
+  R8	Compañía Licorera de Nicaragua (Flor de Caña)	Nicaragua
+  R9	Varela Hermanos (Ron Abuelo)	Panama
+  R10	Trinidad Distiller’s	Trinidad
+  R11	Worthy Park	Jamaica
+  R12	Travellers	Belize
+  R13	Caroni	Trinidad,
+  Armagnac
+  A1	Chateau de Lacaze	France
+  A2	Domaine Laguille	France
+  A3	J. Goudoulin (Veuve Goudoulin)	France
+  A4	Domaine d’Espérance	France
+  A5	Chateau de Laubade	France
+        Cognac
+  Code	Distillery	Country/region	Comment
+  C1	Camus	France
+  C2	Domaine de Chez Guérive	France
+  C3	Louis Royer	France
+  C4	Distillery D’Aumagne	France
+  C5	Tiffon Cognac	France
+  C6	M & H Bonneau	France
+  Gin
+
+}
