@@ -15,8 +15,9 @@ function replaceDistilleryNames( data ) {
         for( const [key, value] of Object.entries(data) )
         {
             var text = elem.innerText;
+            var reg = new RegExp(key + "\.");
 
-            if( text.match(/key\./) )
+            if( text.match( reg ) )
             {
                 var newText = text + " (" + value.name + ", " + value.region + ")";
                 if( value.status.toUpperCase() != 'ACTIVE' )
