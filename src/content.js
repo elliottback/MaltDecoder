@@ -2,7 +2,9 @@ const url = chrome.runtime.getURL('data/data.json');
 
 const selectors = [
     "span.product-box--title", // SMWS Japan - browsing grid
-    "p.product-page--title" // SMWS Japan - individual product
+    "p.product-page--title", // SMWS Japan - individual product
+    "span.product-box--cask", // SMWS - browsing grid
+    "p.product-page--cask-no > span" // SMWS - Individual Product
 ];
 
 function replaceDistilleryNames( data ) {
@@ -14,7 +16,7 @@ function replaceDistilleryNames( data ) {
 
         for( const [key, value] of Object.entries(data) )
         {
-            var text = elem.innerText;
+            var text = elem.innerText.replace('CASK No. ','');
             var reg = new RegExp("^" + key + "\\.");
 
             if( text.match( reg ) )
