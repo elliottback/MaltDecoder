@@ -23,7 +23,11 @@ function replaceDistilleryNames( data ) {
 
             if( text.match(/key\./) )
             {
-                elem.innerText = text + " (" +value.name ")"
+                var newText = text + " (" + value.name + ", " + value.region + ")";
+                if( value.status.toUpperCase() != 'ACTIVE' )
+                    newText += " [" + value.status.toUpperCase() + "]";
+
+                elem.innerText = newText;
                 break;
             }
         }
