@@ -1,4 +1,4 @@
-const url = chrome.runtime.getURL('/data/data.json');
+const url = chrome.runtime.getURL('data/data.json');
 
 const selectors = [
     "span.product-box--title", // SMWS Japan - browsing grid
