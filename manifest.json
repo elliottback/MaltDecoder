@@ -14,7 +14,8 @@
   "content_scripts": [
     {
       "matches": [
-        "*://smws*.com/*"
+        "http://*.swmsjapan.com/*",
+        "https://*.swmsjapan.com/*"
       ],
       "js": [
         "/src/content.js"
