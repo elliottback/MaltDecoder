@@ -8,7 +8,7 @@ const selectors = [
     "span.inc_caskNo",                      // SMWS - Individual Product Reccomendations
     "h1.page-title",                        // SMWS USA - title
     "div.product-description > p > strong", // SMWS USA - desc
-    "span.search-title",                    // SMWS USA - search desc
+    "span.search-title"                     // SMWS USA - search desc
 ];
 
 function replaceDistilleryNames( data ) {
