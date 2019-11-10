@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*/*"
+        "*://smws*.com/*"
       ],
       "js": [
         "/src/content.js"
