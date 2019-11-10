@@ -1,10 +1,14 @@
 const url = chrome.runtime.getURL('data/data.json');
 
 const selectors = [
-    "span.product-box--title", // SMWS Japan - browsing grid
-    "p.product-page--title", // SMWS Japan - individual product
-    "span.product-box--cask", // SMWS - browsing grid
-    "p.product-page--cask-no > span" // SMWS - Individual Product
+    "span.product-box--title",              // SMWS Japan - browsing grid
+    "p.product-page--title",                // SMWS Japan - individual product
+    "span.product-box--cask",               // SMWS - browsing grid
+    "p.product-page--cask-no > span",       // SMWS - Individual Product
+    "span.inc_caskNo",                      // SMWS - Individual Product Reccomendations
+    "h1.page-title",                        // SMWS USA - title
+    "div.product-description > p > strong", // SMWS USA - desc
+    "span.search-title",                    // SMWS USA - search desc
 ];
 
 function replaceDistilleryNames( data ) {

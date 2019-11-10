@@ -10,7 +10,9 @@
     "http://*.smwsjapan.com/*",
     "https://*.smwsjapan.com/*",
     "http://*.smws.com/*",
-    "https://*.smws.com/*"
+    "https://*.smws.com/*",
+    "http://*.smwsa.com/*",
+    "https://*.smwsa.com/*"
   ],
 
   "browser_action": {
@@ -22,7 +24,9 @@
         "http://*.smwsjapan.com/*",
         "https://*.smwsjapan.com/*",
         "http://*.smws.com/*",
-        "https://*.smws.com/*"
+        "https://*.smws.com/*",
+        "http://*.smwsa.com/*",
+        "https://*.smwsa.com/*"
       ],
       "js": [
         "/src/content.js"
