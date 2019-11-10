@@ -845,58 +845,274 @@
     "name":"Fary Lochan",
     "type": "Single Malt"
   },
-  Grain
-  G1	North British	Lowland
-  G2	Carsebridge	Lowland	Closed
-  G3	Caledonian	Lowland	Closed
-  G4	Cameronbridge	Lowland
-  G5	Invergordon	Highland
-  G6	Port Dundas	Lowland	Closed
-  G7	Girvan	Lowland
-  G8	Cambus	Lowland	Closed
-  G9	Loch Lomond	Highland
-  G10	Strathclyde	Lowland
-  G11	Nikka Coffey Grain	Japan
-  G12	Nikka Coffey Malt	Japan	This is malt whisky, but still tagged as grain
-  G13	Chita	Japan
-  G14	Dumbarton	Lowland	Closed
-  G15	Loch Lomond (Rhosdhu)	Highland,
-Bourbon
-  B1	Heaven Hill	Kentucky, USA
-  B2	New Bernheim	Kentucky, USA
-  B3	Rock Town	Arkansas, USA
-  B4	FEW Spirits	Illinois, USA
-  B5	George Dickel (Cascade Hollow)	Tennessee, USA,
-  Rye
-  RW1	FEW Spirits	Illinois, USA,
-  Rum
-  R1	Monymusk	Jamaica
-  R2	Demerara Distillers (El Dorado)	Guyana
-  R3	West Indies Rum	Barbados
-  R4	Trinidad Distillers (Angostura)	Trinidad
-  R5	Long Pond	Jamaica
-  R6	Foursquare	Barbados
-  R7	Hampden	Jamaica
-  R8	Compañía Licorera de Nicaragua (Flor de Caña)	Nicaragua
-  R9	Varela Hermanos (Ron Abuelo)	Panama
-  R10	Trinidad Distiller’s	Trinidad
-  R11	Worthy Park	Jamaica
-  R12	Travellers	Belize
-  R13	Caroni	Trinidad,
-  Armagnac
-  A1	Chateau de Lacaze	France
-  A2	Domaine Laguille	France
-  A3	J. Goudoulin (Veuve Goudoulin)	France
-  A4	Domaine d’Espérance	France
-  A5	Chateau de Laubade	France
-        Cognac
-  Code	Distillery	Country/region	Comment
-  C1	Camus	France
-  C2	Domaine de Chez Guérive	France
-  C3	Louis Royer	France
-  C4	Distillery D’Aumagne	France
-  C5	Tiffon Cognac	France
-  C6	M & H Bonneau	France
-  Gin
-
+  "G1":{
+    "status":"active",
+    "region": "Lowland",
+    "name": "North British",
+    "type": "Grain"
+  },
+  "G2":{
+    "status":"Closed",
+    "region": "Lowland",
+    "name": "Carsebridge",
+    "type": "Grain"
+  },
+  "G3":{
+    "status":"Closed",
+    "region": "Lowland",
+    "name": "Caledonian",
+    "type": "Grain"
+  },
+  "G4":{
+    "status":"active",
+    "region": "Lowland",
+    "name": "Cameronbridge",
+    "type": "Grain"
+  },
+  "G5":{
+    "status":"active",
+    "region": "Highland",
+    "name": "Invergordon",
+    "type": "Grain"
+  },
+  "G6":{
+    "status":"Closed",
+    "region": "Lowland",
+    "name": "Port Dundas",
+    "type": "Grain"
+  },
+  "G7":{
+    "status":"active",
+    "region": "Lowland",
+    "name": "Girvan",
+    "type": "Grain"
+  },
+  "G8":{
+    "status":"Closed",
+    "region": "Lowland",
+    "name": "Cambus",
+    "type": "Grain"
+  },
+  "G9":{
+    "status":"active",
+    "region": "Highland",
+    "name": "Loch Lomond",
+    "type": "Grain"
+  },
+  "G10":{
+    "status":"active",
+    "region": "Lowland",
+    "name": "Strathclyde",
+    "type": "Grain"
+  },
+  "G11":{
+    "status":"active",
+    "region": "Japan",
+    "name": "Nikka Coffey Grain",
+    "type": "Grain"
+  },
+  "G12":{
+    "status":"active",
+    "region": "Japan",
+    "name": "Nikka Coffey Malt",
+    "type": "Single Malt"
+  },
+  "G13":{
+    "status":"active",
+    "region": "Japan",
+    "name": "Chita",
+    "type": "Grain"
+  },
+  "G14":{
+    "status":"Closed",
+    "region": "Lowland",
+    "name": "Dumbarton",
+    "type": "Grain"
+  },
+  "G15":{
+    "status":"active",
+    "region": "Highland",
+    "name": "Loch Lomond (Rhosdhu)",
+    "type": "Grain"
+  },
+  "A1":{
+    "status":"active",
+    "region": "France",
+    "name": "Chateau de Lacaze",
+    "type": "Armagnac"
+  },
+  "A2":{
+    "status":"active",
+    "region": "France",
+    "name": "Domaine Laguille",
+    "type": "Armagnac"
+  },
+  "A3":{
+    "status":"active",
+    "region": "France",
+    "name": "J. Goudoulin (Veuve Goudoulin)",
+    "type": "Armagnac"
+  },
+  "A4":{
+    "status":"active",
+    "region": "France",
+    "name": "Domaine d’Espérance",
+    "type": "Armagnac"
+  },
+  "A5":{
+    "status":"active",
+    "region": "France",
+    "name": "Chateau de Laubade",
+    "type": "Armagnac"
+  },
+  "B1":{
+    "status":"active",
+    "region": "Kentucky, USA",
+    "name": "Heaven Hill",
+    "type": "Bourbon"
+  },
+  "B2":{
+    "status":"active",
+    "region": "Kentucky, USA",
+    "name": "New Bernheim",
+    "type": "Bourbon"
+  },
+  "B3":{
+    "status":"active",
+    "region": "Arkansas, USA",
+    "name": "Rock Town",
+    "type": "Bourbon"
+  },
+  "B4":{
+    "status":"active",
+    "region": "Illinois, USA",
+    "name": "FEW Spirits",
+    "type": "Bourbon"
+  },
+  "B5":{
+    "status":"active",
+    "region": "Tennessee, USA",
+    "name": "George Dickel (Cascade Hollow)",
+    "type": "Bourbon"
+  },
+  "C1":{
+    "status":"active",
+    "region": "France",
+    "name": "Camus",
+    "type": "Cognac"
+  },
+  "C2":{
+    "status":"active",
+    "region": "France",
+    "name": "Domaine de Chez Guérive",
+    "type": "Cognac"
+  },
+  "C3":{
+    "status":"active",
+    "region": "France",
+    "name": "Louis Royer",
+    "type": "Cognac"
+  },
+  "C4":{
+    "status":"active",
+    "region": "France",
+    "name": "Distillery D’Aumagne",
+    "type": "Cognac"
+  },
+  "C5":{
+    "status":"active",
+    "region": "France",
+    "name": "Tiffon Cognac",
+    "type": "Cognac"
+  },
+  "C6":{
+    "status":"active",
+    "region": "France",
+    "name": "M & H Bonneau",
+    "type": "Cognac"
+  },
+  "R1":{
+    "status":"active",
+    "region": "Jamaica",
+    "name": "Monymusk",
+    "type": "Rum"
+  },
+  "R2":{
+    "status":"active",
+    "region": "Guyana",
+    "name": "Demerara Distillers (El Dorado)",
+    "type": "Rum"
+  },
+  "R3":{
+    "status":"active",
+    "region": "Barbados",
+    "name": "West Indies Rum",
+    "type": "Rum"
+  },
+  "R4":{
+    "status":"active",
+    "region": "Trinidad",
+    "name": "Trinidad Distillers (Angostura)",
+    "type": "Rum"
+  },
+  "R5":{
+    "status":"active",
+    "region": "Jamaica",
+    "name": "Long Pond",
+    "type": "Rum"
+  },
+  "R6":{
+    "status":"active",
+    "region": "Barbados",
+    "name": "Foursquare",
+    "type": "Rum"
+  },
+  "R7":{
+    "status":"active",
+    "region": "Jamaica",
+    "name": "Hampden",
+    "type": "Rum"
+  },
+  "R8":{
+    "status":"active",
+    "region": "Nicaragua",
+    "name": "Compañía Licorera de Nicaragua (Flor de Caña)",
+    "type": "Rum"
+  },
+  "R9":{
+    "status":"active",
+    "region": "Panama",
+    "name": "Varela Hermanos (Ron Abuelo)",
+    "type": "Rum"
+  },
+  "R10":{
+    "status":"active",
+    "region": "Trinidad",
+    "name": "Trinidad Distiller’s",
+    "type": "Rum"
+  },
+  "R11":{
+    "status":"active",
+    "region": "Jamaica",
+    "name": "Worthy Park",
+    "type": "Rum"
+  },
+  "R12":{
+    "status":"active",
+    "region": "Belize",
+    "name": "Travellers",
+    "type": "Rum"
+  },
+  "R13":{
+    "status":"active",
+    "region": "Trinidad",
+    "name": "Caroni",
+    "type": "Rum"
+  },
+  "RW1":{
+    "status":"active",
+    "region": "Illinois, USA",
+    "name": "FEW Spirits",
+    "type": "Rye"
+  }
 }
