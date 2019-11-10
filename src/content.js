@@ -34,7 +34,7 @@ function replaceDistilleryNames( data ) {
     }
 };
 
-fetch(url)
+fetch( url, { mode: 'same-origin' } )
     .then( (response) => response.json() )
     .then( (json) => replaceDistilleryNames( json ) )
     .catch(rejected => {
