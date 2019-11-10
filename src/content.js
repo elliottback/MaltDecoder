@@ -1,9 +1,31 @@
 const url = chrome.runtime.getURL('data/data.json');
 
+const selectors = [
+    "span.product-box--title", // SMWS Japan - browsing grid
+    "p.product-page--title" // SMWS Japan - individual product
+];
+
 function replaceDistilleryNames( data ) {
-    var elems = document.getElementsByClassName("product-page--title ");
+    var elems = [];
 
+    selectors.forEach( function( selector )
+    {
+        elems.append( document.querySelectorAll(selector) );
+    } );
 
+    for( var elem : elems )
+    {
+        for( const [key, value] of Object.entries(data) )
+        {
+            var text = elem.innerText;
+
+            if( text.match(/key\./) )
+            {
+                elem.innerText = text + " (" +value.name ")"
+                break;
+            }
+        }
+    }
 };
 
 fetch(url)
@@ -21,10 +43,10 @@ for (var i = 0; i < elements.length; i++) {
         if (node.nodeType === 3) {
             var text = node.nodeValue;
 
-            var replacedText = text.replace(/cal/gi, "butt"); // replaces "cal," "Cal", etc. with "butt"
+
 
             if (replacedText !== text) {
-                element.replaceChild(document.createTextNode(replacedText), node);
+
             }
         }
     }
