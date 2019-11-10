@@ -7,8 +7,8 @@
 
   // For a list of possibilities, see https://developer.chrome.com/extensions/declare_permissions
   "permissions": [
-    "http://*.swmsjapan.com/*",
-    "https://*.swmsjapan.com/*"
+    "http://*.smwsjapan.com/*",
+    "https://*.smwsjapan.com/*"
   ],
 
   "browser_action": {
@@ -17,8 +17,8 @@
   "content_scripts": [
     {
       "matches": [
-        "http://*.swmsjapan.com/*",
-        "https://*.swmsjapan.com/*"
+        "http://*.smwsjapan.com/*",
+        "https://*.smwsjapan.com/*"
       ],
       "js": [
         "/src/content.js"
