@@ -13,8 +13,10 @@ function replaceDistilleryNames( data ) {
         elems.append( document.querySelectorAll(selector) );
     } );
 
-    for( var elem : elems )
+    for( var idx = 0 ; idx < elems.length; idx++ )
     {
+        var elem = elems[idx];
+
         for( const [key, value] of Object.entries(data) )
         {
             var text = elem.innerText;
@@ -31,23 +33,3 @@ function replaceDistilleryNames( data ) {
 fetch(url)
     .then( (response) => response.json() )
     .then( (json) => replaceDistilleryNames( json ) );
-
-var elements = document.getElementsByTagName('*');
-
-for (var i = 0; i < elements.length; i++) {
-    var element = elements[i];
-
-    for (var j = 0; j < element.childNodes.length; j++) {
-        var node = element.childNodes[j];
-
-        if (node.nodeType === 3) {
-            var text = node.nodeValue;
-
-
-
-            if (replacedText !== text) {
-
-            }
-        }
-    }
-}
