@@ -1031,6 +1031,30 @@
     "name": "M & H Bonneau",
     "type": "Cognac"
   },
+  "GN1":{
+    "status":"active",
+    "region": "Scotland",
+    "name": "Glasgow Distillery Company",
+    "type": "Gin"
+  },
+  "GN2":{
+    "status":"active",
+    "region": "Scotland",
+    "name": "Strathearn Distillers",
+    "type": "Cognac"
+  },
+  "GN3":{
+    "status":"active",
+    "region": "Scotland",
+    "name": "The Borders Distillery",
+    "type": "Cognac"
+  },
+  "GN4":{
+    "status":"active",
+    "region": "Ireland",
+    "name": "?",
+    "type": "Cognac"
+  },
   "R1":{
     "status":"active",
     "region": "Jamaica",
