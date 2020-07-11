@@ -2,7 +2,7 @@
 
 # What is this?
 
-This is a Chrome plugin to automatically decode the SMWS website whisky numbers and add their names in parenthis nearby.  Currently, this is only working for the Japan and UK sites. 
+This is a Chrome plugin to automatically decode the SMWS website whisky numbers and add their names in parentheses nearby.  Currently, this is only working for the Japan and UK sites. 
 
 ## What does this Chrome Plugin look like?
 
