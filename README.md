@@ -1,10 +1,16 @@
-### What does this do exactly?
+![Node.js CI](https://github.com/elliottback/MaltDecoder/workflows/Node.js%20CI/badge.svg)
+
+# What is this?
+
+This is a Chrome plugin to automatically decode the SMWS website whisky numbers and add their names in parenthis nearby.  Currently, this is only working for the Japan and UK sites. 
+
+## What does this Chrome Plugin look like?
 
 |Before (no Distillery name)|After (With Name)|
 |----|-----|
 |![Before](/img/smwsbefore.png)|![After](/img/smwsafter.png)|
 
-### Installation Instructions
+# Installation Instructions
 **Google Chrome**
 1. Download this repo as a [ZIP file from GitHub](https://github.com/elliottback/MaltDecoder/archive/master.zip).
 1. Unzip the file and you should have a folder named `MaltDecoder-master`.
@@ -15,6 +21,6 @@
 **Notes**
 * Every time you open Chrome it may warn you about running extensions in developer mode, just click 🗙 to keep the extension enabled.
 
-### What permissions are required?
+## What permissions are required?
 
 This extension will request the ability to inspect/modify content on SMWS HTTP/s domains.
