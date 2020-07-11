@@ -1,4 +1,10 @@
 ![Node.js CI](https://github.com/elliottback/MaltDecoder/workflows/Node.js%20CI/badge.svg)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+![GitHub top language](https://img.shields.io/github/languages/top/elliottback/MaltDecoder)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/elliottback/MaltDecoder)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/elliottback/MaltDecoder)
+![GitHub issues](https://img.shields.io/github/issues/elliottback/MaltDecoder)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/elliottback/MaltDecoder)
 
 # What is this?
 
