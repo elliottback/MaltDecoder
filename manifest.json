@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Malt Decoder",
   "version": "0.0.1",
-  "description": "Decode Whisky names on SMWS (Single Malt Whisky Society) pages",
+  "description": "Decode Whisky names on SMWS (Single Malt Whisky Society) UK and JP pages",
   "homepage_url": "https://github.com/elliottback/MaltDecoder",
 
   // For a list of possibilities, see https://developer.chrome.com/extensions/declare_permissions

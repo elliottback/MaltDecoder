@@ -1,3 +1,7 @@
+### What does this do exactly?
+
+![Before](/img/smwsbefore.png) ![After](/img/smwsafter.png)
+
 ### Installation Instructions
 **Google Chrome**
 1. Download this repo as a [ZIP file from GitHub](https://github.com/elliottback/MaltDecoder/archive/master.zip).
@@ -8,3 +12,7 @@
 
 **Notes**
 * Every time you open Chrome it may warn you about running extensions in developer mode, just click 🗙 to keep the extension enabled.
+
+### What permissions are required?
+
+This extension will request the ability to inspect/modify content on SMWS HTTP/s domains.
