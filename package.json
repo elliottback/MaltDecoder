@@ -1,0 +1,33 @@
+{
+  "name": "maltdecoder",
+  "version": "1.0.0",
+  "description": "Chrome plugin to decode SMWS codes on the UK and JP sites",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliottback/MaltDecoder.git"
+  },
+  "keywords": [
+    "scotch",
+    "whisky",
+    "society",
+    "smws",
+    "chrome"
+  ],
+  "author": "Elliott C. Bäck",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/elliottback/MaltDecoder/issues"
+  },
+  "homepage": "https://github.com/elliottback/MaltDecoder#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "lodash": "^4.17.19"
+  }
+}
