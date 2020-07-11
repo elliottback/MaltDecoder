@@ -1,6 +1,8 @@
 ### What does this do exactly?
 
-![Before](/img/smwsbefore.png) ![After](/img/smwsafter.png)
+|Before (no Distillery name)|After (With Name)|
+|----|-----|
+|![Before](/img/smwsbefore.png)|![After](/img/smwsafter.png)|
 
 ### Installation Instructions
 **Google Chrome**
