@@ -27,7 +27,7 @@
   "homepage": "https://github.com/elliottback/MaltDecoder#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1",
+    "mocha": "^8.1.1",
     "lodash": "^4.17.19"
   }
 }
