@@ -36,5 +36,3 @@ describe('data.json', function () {
         }
     } );
 });
-
-// TODO: test replaceDistilleryNames()

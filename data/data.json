@@ -845,6 +845,36 @@
         "name":"Fary Lochan",
         "type": "Single Malt"
     },
+    "142": {
+        "status":"active",
+        "region":"New York, USA",
+        "name":"Breuckelen Distilling",
+        "type": "Single Malt"
+    },
+    "143": {
+        "status":"active",
+        "region":"Washington, USA",
+        "name":"Copperworks Distilling Co.",
+        "type": "Single Malt"
+    },
+    "144": {
+        "status":"active",
+        "region":"Sweden",
+        "name":"High Coast Distillery (formerly Box Whisky)",
+        "type": "Single Malt"
+    },
+    "145": {
+        "status":"active",
+        "region":"Sweden",
+        "name":"Smögen Whisky",
+        "type": "Single Malt"
+    },
+    "146": {
+        "status":"active",
+        "region":"England",
+        "name":"Cotswolds",
+        "type": "Single Malt"
+    },
     "G1":{
         "status":"active",
         "region": "Lowland",
