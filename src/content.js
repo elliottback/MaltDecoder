@@ -1,6 +1,6 @@
 var replacer = require('./replace');
 
-const url = chrome.runtime.getURL('data/data.json');
+const url = chrome.runtime.getURL('data.json');
 
 fetch( url, { mode: 'same-origin' } )
     .then( (response) => response.json() )
