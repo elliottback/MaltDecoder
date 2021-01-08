@@ -1071,19 +1071,19 @@
         "status":"active",
         "region": "Scotland",
         "name": "Strathearn Distillers",
-        "type": "Cognac"
+        "type": "Gin"
     },
     "GN3":{
         "status":"active",
         "region": "Scotland",
         "name": "The Borders Distillery",
-        "type": "Cognac"
+        "type": "Gin"
     },
     "GN4":{
         "status":"active",
         "region": "Ireland",
         "name": "?",
-        "type": "Cognac"
+        "type": "Gin"
     },
     "R1":{
         "status":"active",
