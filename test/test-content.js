@@ -9,21 +9,27 @@ const { JSDOM } = jsdom;
 describe('data.json', function () {
     var json = undefined;
 
+    const html = {
+        '<p class="product-page--title flush"><span class="new">NEW</span> %REPLACE%</p>': 'p',
+        '<h1 class="product-page--title inline-title flush"> %REPLACE%</h1>': 'h1'
+    };
+
     before( function() {
         json = JSON.parse( fs.readFileSync( './data/data.json', 'utf8') );
     } );
 
     var driver = function( input, expected )
     {
-        var html = '<p class="product-page--title flush"><span class="new">NEW</span> '+input+'</p>';
+        for( const [h, selector] of Object.entries(html) )
+        {
+            var dom = new JSDOM( h.replace("%REPLACE%", input) );
+            global.document = dom.window.document;
 
-        var dom = new JSDOM(html);
-        global.document = dom.window.document;
+            replacer.replaceDistilleryNames( json );
 
-        replacer.replaceDistilleryNames( json );
-
-        var result = document.getElementsByTagName("p")[0];
-        assert.equal( result.textContent, "NEW " + expected );
+            var result = document.querySelector(selector);
+            assert.include( result.textContent, expected );
+        }
     }
 
     it( 'working basic', function(){
