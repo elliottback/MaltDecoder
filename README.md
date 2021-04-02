@@ -31,3 +31,7 @@ This is a Chrome plugin to automatically decode the SMWS website whisky numbers 
 ## What permissions are required?
 
 This extension will request the ability to inspect/modify content on SMWS HTTP/s domains.
+
+# Build
+
+Just run `npm run build`
