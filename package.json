@@ -28,7 +28,7 @@
   "homepage": "https://github.com/elliottback/MaltDecoder#readme",
   "devDependencies": {
     "chai": "^4.3.4",
-    "copy-webpack-plugin": "^8.1.1",
+    "copy-webpack-plugin": "^9.0.0",
     "jsdom": "^16.6.0",
     "lodash": "^4.17.21",
     "mocha": "^8.4.0",
