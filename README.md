@@ -19,11 +19,11 @@ This is a Chrome plugin to automatically decode the SMWS website whisky numbers 
 
 # Installation Instructions
 **Google Chrome**
-1. ~~Download this repo as a [ZIP file from GitHub](https://github.com/elliottback/MaltDecoder/archive/master.zip).~~
-1. Unzip the file and you should have a folder named `MaltDecoder-master`.
+1. Download the [latest release ZIP file from GitHub](https://github.com/elliottback/MaltDecoder/releases/download/latest/MaltDecoder.zip).
+1. Unzip the file to the folder of your choice, say `MaltDecoder`.
 1. In Chrome go to the extensions page (`chrome://extensions`).
 1. Enable Developer Mode.
-1. Drag the `dist` folder inside `MaltDecoder-master` anywhere on the page to import it.
+1. Drag the `MaltDecoder` folder anywhere on the page to import it.
 1. You may need to toggle the sticky on/off switch by right clicking on a blank part of extensions when on the site the first time to enable it
 
 **Notes**
@@ -35,4 +35,4 @@ This extension will request the ability to inspect/modify content on SMWS HTTP/s
 
 # Build
 
-Just run `npm run build`
+Just run `npm run build --verbose`
