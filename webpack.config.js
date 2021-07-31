@@ -21,8 +21,8 @@ module.exports = {
     plugins: [
         new CopyPlugin({
             patterns: [
-                { from: './data/data.json', to: '../data.json' },
-                { from: './data/manifest.json', to: '../manifest.json' }
+                { from: path.resolve(__dirname, 'data') + '/manifest.json', to: path.resolve(__dirname, 'dist') + '/manifest.json' },
+                { from: path.resolve(__dirname, 'data') + '/data.json', to: path.resolve(__dirname, 'dist') + '/data.json' }
             ]
         })
     ]
