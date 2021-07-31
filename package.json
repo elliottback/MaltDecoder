@@ -40,7 +40,7 @@
     "plugins":  [
       "@semantic-release/commit-analyzer",
       ["@semantic-release/github", {
-        "assets": ["dist/**/*"]
+        "assets": ["dist/**/*.{js,json,}"]
       }]
     ]
   }
