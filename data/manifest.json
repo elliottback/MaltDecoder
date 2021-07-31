@@ -29,7 +29,7 @@
         "https://*.smwsa.com/*"
       ],
       "js": [
-        "js/content.js"
+        "content.js"
       ],
       "run_at": "document_end"
     }
