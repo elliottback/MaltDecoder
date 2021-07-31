@@ -13,6 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/elliottback/MaltDecoder.git"
   },
+  "private": true,
   "keywords": [
     "scotch",
     "whisky",
@@ -33,15 +34,23 @@
     "lodash": "^4.17.21",
     "mocha": "^9.0.3",
     "webpack": "^5.47.1",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "zip-webpack-plugin": "^4.0.1"
   },
   "release": {
-    "branches": ["master"],
-    "plugins":  [
+    "branches": [
+      "master"
+    ],
+    "plugins": [
       "@semantic-release/commit-analyzer",
-      ["@semantic-release/github", {
-        "assets": ["dist/**/*.{js,json}"]
-      }]
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            "dist/MaltDecoder.zip"
+          ]
+        }
+      ]
     ]
   }
 }
