@@ -875,6 +875,30 @@
         "name":"Cotswolds",
         "type": "Single Malt"
     },
+    "147": {
+        "status":"active",
+        "region":"Australia",
+        "name":"Archie Rose",
+        "type": "Single Malt"
+    },
+    "148": {
+        "status":"active",
+        "region":"Australia",
+        "name":"Starward",
+        "type": "Single Malt"
+    },
+    "149": {
+        "status":"active",
+        "region":"Highland",
+        "name":"Ardnamurchan",
+        "type": "Single Malt"
+    },
+    "150": {
+        "status":"active",
+        "region":"Ireland",
+        "name":"West Cork Distillers",
+        "type": "Single Malt"
+    },
     "G1":{
         "status":"active",
         "region": "Lowland",
@@ -995,6 +1019,12 @@
         "name": "Chateau de Laubade",
         "type": "Armagnac"
     },
+    "A6":{
+        "status":"active",
+        "region": "France",
+        "name": "Domaine Lasalle",
+        "type": "Armagnac"
+    },
     "B1":{
         "status":"active",
         "region": "Kentucky, USA",
@@ -1023,6 +1053,12 @@
         "status":"active",
         "region": "Tennessee, USA",
         "name": "George Dickel (Cascade Hollow)",
+        "type": "Bourbon"
+    },
+    "B6":{
+        "status":"active",
+        "region": "New York",
+        "name": "Finger Lakes Distilling",
         "type": "Bourbon"
     },
     "C1":{
@@ -1167,6 +1203,18 @@
         "status":"active",
         "region": "Illinois, USA",
         "name": "FEW Spirits",
+        "type": "Rye"
+    },
+    "RW2":{
+        "status":"active",
+        "region": "New York, USA",
+        "name": "Finger Lakes Distilling",
+        "type": "Rye"
+    },
+    "RW3":{
+        "status":"active",
+        "region": "New York, USA",
+        "name": "New York Distilling Co.",
         "type": "Rye"
     }
 }
