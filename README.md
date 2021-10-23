@@ -1,4 +1,5 @@
 ![Node.js CI](https://github.com/elliottback/MaltDecoder/workflows/Node.js%20CI/badge.svg)
+[![Release](https://github.com/elliottback/MaltDecoder/actions/workflows/release.yml/badge.svg)](https://github.com/elliottback/MaltDecoder/actions/workflows/release.yml)
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 ![GitHub top language](https://img.shields.io/github/languages/top/elliottback/MaltDecoder)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/elliottback/MaltDecoder)
