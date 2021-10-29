@@ -60,7 +60,7 @@ module.exports = {
         new saveFile([
             {
                 url: 'https://github.com/elliottback/SMWS_Codes/releases/latest/download/data.json',
-                filepath: './data/data.json'
+                filepath: './data.json'
             },
         ]),
         new CopyPlugin({

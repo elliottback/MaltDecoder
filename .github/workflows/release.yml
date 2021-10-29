@@ -20,7 +20,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           file: "data.json"
           repo: "elliottback/SMWS_Codes"
-          target: "./data/data.json"
+          target: "./data.json"
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
