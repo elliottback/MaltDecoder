@@ -1,4 +1,3 @@
-// testing libraries:
 var expect = require('chai').expect;
 var assert = require('chai').assert;
 var fs = require('fs');
