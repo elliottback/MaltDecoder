@@ -15,7 +15,7 @@ describe('data.json', function () {
     };
 
     before( function() {
-        json = JSON.parse( fs.readFileSync( './dist/data/data.json', 'utf8') );
+        json = JSON.parse( fs.readFileSync( './dist/data.json', 'utf8') );
     } );
 
     var driver = function( input, expected )
