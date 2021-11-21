@@ -13,7 +13,7 @@ jobs:
         uses: hmarr/auto-approve-action@v2.0.0
         if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PAT }}
   automerge:
     name: Auto merge after successful checks
     needs: autoapprove
@@ -23,6 +23,6 @@ jobs:
         uses: pascalgn/automerge-action@135f0bdb927d9807b5446f7ca9ecc2c51de03c4a
         if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
           MERGE_LABELS: dependencies
           MERGE_METHOD: rebase
