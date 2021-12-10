@@ -47,11 +47,6 @@ jobs:
           path: |
             dist/*.png
 
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
-
   release-release:
     name: Release (Release)
     runs-on: ubuntu-latest
