@@ -1,6 +1,7 @@
-const fs = require('fs');
 const assert = require('assert');
 const puppeteer = require('puppeteer');
+const imageToAscii = require("image-to-ascii");
+
 const extensionPath = process.cwd() + "/dist";
 const urlPath = "file://" + process.cwd() + "/test/test-extension-"
 
@@ -38,6 +39,7 @@ describe('Extension UI Testing', function() {
             const value = await element.evaluate(el => el.textContent);
 			assert.equal(value, '105.31 (Tormore, Speyside)');
 			await page.screenshot({ path: extensionPath + `/test-extension-1.png` });
+			imageToAscii( extensionPath + `/test-extension-1.png`, (err, converted) => { console.log(err || converted); });
 		});
 
         it('Rewrite target 2', async function() {
@@ -46,6 +48,7 @@ describe('Extension UI Testing', function() {
             const value = await element.evaluate(el => el.textContent);
             assert.equal(value, '68.59 (Blair Athol, Highlands)');
             await page.screenshot({ path: extensionPath + `/test-extension-2.png` });
+            imageToAscii( extensionPath + `/test-extension-2.png`, (err, converted) => { console.log(err || converted); });
         });
 
         // USA
@@ -55,6 +58,7 @@ describe('Extension UI Testing', function() {
             const value = await element.evaluate(el => el.textContent);
             assert.equal(value, '7.264 (Longmorn, Speyside)');
             await page.screenshot({ path: extensionPath + `/test-extension-3.png` });
+            imageToAscii( extensionPath + `/test-extension-3.png`, (err, converted) => { console.log(err || converted); });
         });
 
         // UK
@@ -64,6 +68,7 @@ describe('Extension UI Testing', function() {
             const value = await element.evaluate(el => el.textContent);
             assert.equal(value, '6.55 (Glen Deveron / Macduff, Speyside)');
             await page.screenshot({ path: extensionPath + `/test-extension-4.png` });
+            imageToAscii( extensionPath + `/test-extension-4.png`, (err, converted) => { console.log(err || converted); });
         })
 
         it('Rewrite target 5', async function() {
@@ -72,6 +77,7 @@ describe('Extension UI Testing', function() {
             const value = await element.evaluate(el => el.textContent);
             assert.equal(value, '4.305 (Highland Park, Highlands)');
             await page.screenshot({ path: extensionPath + `/test-extension-5.png` });
+            imageToAscii( extensionPath + `/test-extension-5.png`, (err, converted) => { console.log(err || converted); });
         })
 	});
 
