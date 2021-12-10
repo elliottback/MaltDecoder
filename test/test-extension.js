@@ -2,12 +2,14 @@ const fs = require('fs');
 const assert = require('assert');
 const puppeteer = require('puppeteer');
 const extensionPath = process.cwd() + "/dist";
-const urlPath = process.cwd() + "/test/test-extension-"
+const urlPath = "file://" + process.cwd() + "/test/test-extension-"
 
 let page = null;
 let browser = null;
 
 async function boot() {
+    console.log("Extension path is: " + extensionPath);
+
     browser = await puppeteer.launch({
         executablePath: process.env.PUPPETEER_EXEC_PATH, 	// set by docker container in github CI environment
         headless: false, 									// extension are allowed only in headful mode
