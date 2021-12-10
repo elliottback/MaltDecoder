@@ -43,6 +43,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: dist
+          if-no-files-found: error
           path: |
             dist/*.png
 
@@ -77,8 +78,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Test
-        run: npm run build --if-present --verbose && npm test
+      - name: Build
+        run: npm run build
 
       - name: Release
         env:
