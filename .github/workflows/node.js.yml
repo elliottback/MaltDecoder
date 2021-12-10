@@ -23,12 +23,25 @@ jobs:
         repo: "elliottback/SMWS_Codes"
         target: "./data.json"
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2-beta
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+    - name: Install stuff
+      run: npm ci
+      env:
+        PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+    - name: build
+      run: npm run ci
+    - name: Run headful puppeteer tests
+      uses: djp3/puppeteer-headful@master
+      with:
+        args: npm test
+    - name: Archive  artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist
+        path: |
+          dist/*.png
 
   automerge:
     runs-on: ubuntu-latest

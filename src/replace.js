@@ -2,9 +2,7 @@ const selectors = [
     "span.product-box--title",              // SMWS Japan - browsing grid
     "p.product-page--title",                // SMWS Japan - individual product
     "h1.product-page--title",               // SMWS Japan - new individual product
-    "span.product-box--cask",               // SMWS - browsing grid
-    "p.product-page--cask-no > span",       // SMWS - Individual Product
-    "span.inc_caskNo",                      // SMWS - Individual Product Recommendations
+    ".caskNo",                              // SMWS UK - Individual Product Recommendations
     "h1.page-title",                        // SMWS USA - title
     "div.product-description > p > strong", // SMWS USA - desc
     "span.search-title"                     // SMWS USA - search desc

@@ -39,39 +39,51 @@ const saveFile = class SaveRemoteFilePlugin {
     }
 };
 
-module.exports = {
-    mode: "production",
-    devtool: "inline-source-map",
+module.exports = (env) => {
 
-    entry: {
-        content: './src/content.js',
-    },
+    // determine which chrome plugins manifest to use
+    var manifest = "";
+    if( env.ci != undefined )
+        manifest = "manifest-ci.json";
+    else if( env.production != undefined )
+        manifest = "manifest.json";
+    else
+        throw "Unknown environment, please use ci | production!";
 
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: '[name].js'
-    },
+    return {
+        mode: "production",
+        devtool: "inline-source-map",
 
-    resolve: {
-        extensions: [".js"]
-    },
+        entry: {
+            content: './src/content.js',
+        },
 
-    plugins: [
-        new saveFile([
-            {
-                url: 'https://github.com/elliottback/SMWS_Codes/releases/latest/download/data.json',
-                filepath: './data.json'
-            },
-        ]),
-        new CopyPlugin({
-            patterns: [
-                { from: path.resolve(__dirname, 'data') + '/manifest.json', to: path.resolve(__dirname, 'dist') + '/manifest.json' },
-            ]
-        }),
-        new ZipPlugin({
-          // OPTIONAL: defaults to the Webpack output filename (above) or,
-          // if not present, the basename of the path
-          filename: 'MaltDecoder.zip',
-        })
-    ]
+        output: {
+            path: path.resolve(__dirname, 'dist'),
+            filename: '[name].js'
+        },
+
+        resolve: {
+            extensions: [".js"]
+        },
+
+        plugins: [
+            new saveFile([
+                {
+                    url: 'https://github.com/elliottback/SMWS_Codes/releases/latest/download/data.json',
+                    filepath: './data.json'
+                },
+            ]),
+            new CopyPlugin({
+                patterns: [
+                    { from: path.resolve(__dirname, 'data') + '/' + manifest, to: path.resolve(__dirname, 'dist') + '/manifest.json' },
+                ]
+            }),
+            new ZipPlugin({
+              // OPTIONAL: defaults to the Webpack output filename (above) or,
+              // if not present, the basename of the path
+              filename: 'MaltDecoder.zip',
+            })
+        ]
+    };
 };
