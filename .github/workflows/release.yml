@@ -35,7 +35,7 @@ jobs:
         run: npm run ci
 
       - name: Run headful puppeteer tests
-        uses: djp3/puppeteer-headful@master
+        uses: djp3/puppeteer-headful@v2
         with:
           args: npm test
 
