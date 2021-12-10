@@ -4,10 +4,57 @@ on:
     branches:
       - master
 jobs:
-  release:
-    name: Release
+  release-test:
+    name: Release (Test)
     runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
+      - name: Download artifact smws codes
+        uses: dsaltares/fetch-gh-release-asset@0.06
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          file: "data.json"
+          repo: "elliottback/SMWS_Codes"
+          target: "./data.json"
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 16
+
+      - name: Install stuff
+        run: npm ci
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
+
+      - name: build
+        run: npm run ci
+
+      - name: Run headful puppeteer tests
+        uses: djp3/puppeteer-headful@master
+        with:
+          args: npm test
+
+      - name: Archive  artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: |
+            dist/*.png
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
+
+  release-release:
+    name: Release (Release)
+    runs-on: ubuntu-latest
+    needs: [ "release-test" ]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
