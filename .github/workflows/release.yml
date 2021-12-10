@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+
 jobs:
   release-test:
     name: Release (Test)
