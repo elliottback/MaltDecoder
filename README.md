@@ -36,4 +36,4 @@ This extension will request the ability to inspect/modify content on SMWS HTTP/s
 
 # Build & Test
 
-Just run `npm run build --verbose` before `npm test`
+Just run `npm run ci` before `npm test`
