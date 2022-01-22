@@ -47,6 +47,7 @@ jobs:
         path: |
           dist/*.png
 
+  # consider https://github.com/fastify/github-action-merge-dependabot
   auto-merge:
     runs-on: ubuntu-latest
     # Guarantee that commit comes from Dependabot (don't blindly trust external GitHub Actions)
