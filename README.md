@@ -1,11 +1,12 @@
 ![Node.js CI](https://github.com/elliottback/MaltDecoder/workflows/Node.js%20CI/badge.svg)
 [![Release](https://github.com/elliottback/MaltDecoder/actions/workflows/release.yml/badge.svg)](https://github.com/elliottback/MaltDecoder/actions/workflows/release.yml)
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
-![GitHub top language](https://img.shields.io/github/languages/top/elliottback/MaltDecoder)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/elliottback/MaltDecoder)
+![CodeQL](https://github.com/elliottback/MaltDecoder/workflows/CodeQL/badge.svg)
 ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/elliottback/MaltDecoder)
 ![GitHub issues](https://img.shields.io/github/issues/elliottback/MaltDecoder)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/elliottback/MaltDecoder)
+![GitHub top language](https://img.shields.io/github/languages/top/elliottback/MaltDecoder)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/elliottback/MaltDecoder)
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 # What is this?
