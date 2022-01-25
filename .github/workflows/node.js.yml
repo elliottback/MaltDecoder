@@ -1,8 +1,6 @@
 name: Node.js CI
 
-on:
-  pull_request:
-    branches: [ master ]
+on: [pull_request_target]
 
 jobs:
   build:
@@ -55,8 +53,6 @@ jobs:
     needs: [build]
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.PAT }}
       - uses: ahmadnassri/action-dependabot-auto-merge@v2.6
         with:
           target: major
