@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/elliottback/MaltDecoder#readme",
   "devDependencies": {
-    "chai": "^4.3.4",
+    "chai": "^4.3.5",
     "copy-webpack-plugin": "^10.2.1",
     "download": "^8.0.0",
     "jsdom": "^18.1.0",
