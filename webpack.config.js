@@ -1,5 +1,5 @@
 const path = require('path');
-const got = require('got');
+const axios = require('axios').default;
 const CopyPlugin = require("copy-webpack-plugin");
 const ZipPlugin = require('zip-webpack-plugin');
 const webpack = require('webpack');
@@ -17,18 +17,22 @@ const saveFile = class SaveRemoteFilePlugin {
                 const downloadFiles = (option) => {
                     logger.info("Downloading: " + option.url + " ...");
 
-                    let data = [];
-                    got.get(option.url, {responseType: 'json'})
-                        .then( function(response) {
+                    axios.get( option.url )
+                        .then(function (response) {
                             logger.info('Remote file downloaded to: ', option.filepath );
-                            compilation.emitAsset( option.filepath, new webpack.sources.RawSource( response.rawBody ) );
+                            compilation.emitAsset( option.filepath, new webpack.sources.RawSource( JSON.stringify( response.data ) ) );
 
                             // Issue the callback after all files have been processed
                             count--;
                             if (count === 0) {
                                 callback();
                             }
-                        } );
+                      })
+                      .catch(function (error) {
+                        // handle error
+                        logger.error(error);
+                        throw(error);
+                      });
                 };
 
                 this.options.forEach(downloadFiles);
