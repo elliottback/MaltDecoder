@@ -1,7 +1,7 @@
 const path = require('path');
+const got = require('got');
 const CopyPlugin = require("copy-webpack-plugin");
 const ZipPlugin = require('zip-webpack-plugin');
-const download = require('download');
 const webpack = require('webpack');
 
 const saveFile = class SaveRemoteFilePlugin {
@@ -15,22 +15,20 @@ const saveFile = class SaveRemoteFilePlugin {
                 const logger = compiler.getInfrastructureLogger('SaveRemoteFilePlugin');
 
                 const downloadFiles = (option) => {
-                logger.info("Downloading: " + option.url + " to "+ option.filepath + " ...");
+                    logger.info("Downloading: " + option.url + " ...");
 
-                    download(option.url).then(data => {
-                        compilation.emitAsset( option.filepath, new webpack.sources.RawSource( data ) );
-                        logger.info('Remote file downloaded: ', option.filepath);
+                    let data = [];
+                    got.get(option.url, {responseType: 'json'})
+                        .then( function(response) {
+                            logger.info('Remote file downloaded to: ', option.filepath );
+                            compilation.emitAsset( option.filepath, new webpack.sources.RawSource( response.rawBody ) );
 
-                        // Issue the callback after all files have been processed
-                        count--;
-                        if (count === 0) {
-                            callback();
-                        }
-                    }).catch(error => {
-                        logger.error(error);
-                        compilation.errors.push(new Error(error));
-                        callback();
-                    });
+                            // Issue the callback after all files have been processed
+                            count--;
+                            if (count === 0) {
+                                callback();
+                            }
+                        } );
                 };
 
                 this.options.forEach(downloadFiles);
