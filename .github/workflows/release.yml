@@ -47,6 +47,7 @@ jobs:
           path: |
             dist/*.png
 
+# good thread @ https://lightrun.com/answers/semantic-release-git-semantic-releasegit-not-using-gh_token
   release-release:
     name: Release (Release)
     runs-on: ubuntu-latest
