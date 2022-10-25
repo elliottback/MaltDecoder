@@ -20,7 +20,7 @@ jobs:
         target: "./data.json"
 
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2-beta
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
 
@@ -33,7 +33,7 @@ jobs:
       run: npm run ci
 
     - name: Run headful puppeteer tests
-      uses: mujo-code/puppeteer-headful@v2
+      uses: mujo-code/puppeteer-headful@v16.6.0
       with:
         args: npm test
 
