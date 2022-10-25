@@ -1,5 +1,5 @@
 const path = require('path');
-const axios = require('axios').default;
+const axios = require('axios');
 const CopyPlugin = require("copy-webpack-plugin");
 const ZipPlugin = require('zip-webpack-plugin');
 const webpack = require('webpack');
