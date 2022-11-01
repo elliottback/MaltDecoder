@@ -48,6 +48,14 @@ describe('Extension UI Testing', function() {
             await page.screenshot({ path: extensionPath + `/test-extension-2.png` });
         });
 
+        it('Rewrite target 6', async function() {
+            await page.goto(urlPath + "6.html");
+            const element = await page.waitForSelector(".product-box--title");
+            const value = await element.evaluate(el => el.textContent);
+            assert.equal(value, '151.3 (Mackmyra, Sweden)');
+            await page.screenshot({ path: extensionPath + `/test-extension-6.png` });
+        })
+
         // USA
         it('Rewrite target 3', async function() {
             await page.goto(urlPath + "3.html");
