@@ -37,7 +37,7 @@
     "mocha": "^10.2.0",
     "nanoid": ">=4.0.2",
     "nyc": "^15.1.0",
-    "puppeteer": "^20.7.1",
+    "puppeteer": "^20.7.2",
     "webpack": "^5.87.0",
     "webpack-cli": "^5.1.4",
     "zip-webpack-plugin": "^4.0.1"
