@@ -35,7 +35,7 @@ jobs:
         run: npm run ci
 
       - name: Run headful puppeteer tests
-        uses: mujo-code/puppeteer-headful@16.6.0
+        uses: mujo-code/puppeteer-headful@18.9.0
         with:
           args: npm test
 
