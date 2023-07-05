@@ -8,7 +8,7 @@ const selectors = [
     "span.search-title"                     // SMWS USA - search desc
 ];
 
-const regex = new RegExp("([GABCNRW]{0,2}[0-9]{1,3})\\.[0-9]+");
+const regex = /([GABCNRW]{0,2}[0-9]{1,3})\\.[0-9]/
 
 exports.regex = regex;
 
