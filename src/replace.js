@@ -8,6 +8,10 @@ const selectors = [
     "span.search-title"                     // SMWS USA - search desc
 ];
 
+const regex = new RegExp("([GABCNRW]{0,2}[0-9]{1,3})\\.[0-9]+");
+
+exports.regex = regex;
+
 exports.replaceDistilleryNames = function( data ) {
     var elems = document.querySelectorAll( selectors.join(",") );
 
@@ -15,11 +19,10 @@ exports.replaceDistilleryNames = function( data ) {
     {
         var elem = elems[idx];
         var text = elem.textContent.replace(/CASK[\s]*No.[\s]*/ig,'').trim();
-        var reg = new RegExp("([a-zA-Z]*[0-9]+)\\.[0-9]+");
 
-        if( reg.test( text ) )
+        if( regex.test( text ) )
         {
-            var match = text.match( reg )[1].toUpperCase();
+            var match = text.match( regex )[1].toUpperCase();
 
             if( match in data )
             {
