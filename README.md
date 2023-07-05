@@ -1,7 +1,7 @@
 ![Node.js CI](https://github.com/elliottback/MaltDecoder/workflows/Node.js%20CI/badge.svg)
 [![Release](https://github.com/elliottback/MaltDecoder/actions/workflows/release.yml/badge.svg)](https://github.com/elliottback/MaltDecoder/actions/workflows/release.yml)
 ![CodeQL](https://github.com/elliottback/MaltDecoder/workflows/CodeQL/badge.svg)
-![Snyk Vulnerabilities for GitHub Repo](https://snyk.io/test/github/elliottback/MaltDecoder)
+![Snyk Vulnerabilities](https://snyk.io/test/github/elliottback/MaltDecoder/badge.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=elliottback_MaltDecoder&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=elliottback_MaltDecoder)
 ![GitHub issues](https://img.shields.io/github/issues/elliottback/MaltDecoder)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/elliottback/MaltDecoder)

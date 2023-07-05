@@ -1,7 +1,7 @@
-var expect = require('chai').expect;
-var assert = require('chai').assert;
-var fs = require('fs');
-var replacer = require('../src/replace');
+const expect = require('chai').expect;
+const assert = require('chai').assert;
+const fs = require('fs');
+const replacer = require('../src/replace');
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 

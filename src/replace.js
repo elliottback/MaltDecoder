@@ -16,7 +16,7 @@ exports.regex = regex;
 exports.replaceDistilleryNames = function( data ) {
     let elems = document.querySelectorAll( selectors.join(",") );
 
-    for( var idx = 0 ; idx < elems.length; idx++ )
+    for( let idx = 0 ; idx < elems.length; idx++ )
     {
         let elem = elems[idx];
         let text = elem.textContent.replace(/CASK[\s]*No.[\s]*/ig,'').trim();

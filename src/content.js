@@ -1,4 +1,4 @@
-var replacer = require('./replace');
+const replacer = require('./replace');
 
 const url = chrome.runtime.getURL('data.json');
 
