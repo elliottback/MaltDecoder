@@ -6,7 +6,7 @@ const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
 describe('data.json', function () {
-    var json = undefined;
+    let json = undefined;
 
     const html = {
         '<p class="product-page--title flush"><span class="new">NEW</span> %REPLACE%</p>': 'p',
@@ -17,16 +17,16 @@ describe('data.json', function () {
         json = JSON.parse( fs.readFileSync( './dist/data.json', 'utf8') );
     } );
 
-    var driver = function( input, expected )
+    let driver = function( input, expected )
     {
         for( const [h, selector] of Object.entries(html) )
         {
-            var dom = new JSDOM( h.replace("%REPLACE%", input) );
+            let dom = new JSDOM( h.replace("%REPLACE%", input) );
             global.document = dom.window.document;
 
             replacer.replaceDistilleryNames( json );
 
-            var result = document.querySelector(selector);
+            let result = document.querySelector(selector);
             assert.include( result.textContent, expected );
         }
     }
