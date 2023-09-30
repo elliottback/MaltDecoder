@@ -30,7 +30,7 @@
   "homepage": "https://github.com/elliottback/MaltDecoder#readme",
   "devDependencies": {
     "axios": "^1.5.1",
-    "chai": "^4.3.9",
+    "chai": "^4.3.10",
     "copy-webpack-plugin": "^11.0.0",
     "jsdom": "^22.1.0",
     "lodash": "^4.17.21",
