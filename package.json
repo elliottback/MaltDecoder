@@ -32,7 +32,7 @@
     "axios": "^1.6.2",
     "chai": "^4.3.10",
     "copy-webpack-plugin": "^11.0.0",
-    "jsdom": "^22.1.0",
+    "jsdom": "^23.0.0",
     "lodash": "^4.17.21",
     "mocha": "^10.2.0",
     "nanoid": ">=5.0.3",
