@@ -1,7 +1,6 @@
-import {expect, assert} from 'chai';
+import {expect} from 'chai';
 import fs from 'fs';
-import { replaceDistilleryNames, regex } from '../src/replace.js';
-import JSDOM from 'jsdom';
+import { regex } from '../src/replace.js';
 
 describe('Regex Covers All Defined Keys', function () {
     let json = undefined;

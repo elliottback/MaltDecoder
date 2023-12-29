@@ -1,4 +1,4 @@
-import {expect, assert} from 'chai';
+import {assert} from 'chai';
 import fs from 'fs';
 import { replaceDistilleryNames } from '../src/replace.js';
 import { JSDOM } from 'jsdom';
