@@ -9,20 +9,20 @@ const selectors = [
 ];
 
 // 6 digits here is not 100% future-proof
-const regex = /([GABCNRW]{0,2}\d{1,3})\.\d{1,6}/i
+const localRegex = /([GABCNRW]{0,2}\d{1,3})\.\d{1,6}/i
 
-exports.regex = regex;
+export const regex = localRegex;
 
-exports.replaceDistilleryNames = function( data ) {
+export function replaceDistilleryNames( data ) {
     let elems = document.querySelectorAll( selectors.join(",") );
 
     for( let elem of elems )
     {
         let text = elem.textContent.replace(/CASK\s*No.\s*/ig,'').trim();
 
-        if( regex.test( text ) )
+        if( localRegex.test( text ) )
         {
-            let match = text.match( regex )[1].toUpperCase();
+            let match = text.match( localRegex )[1].toUpperCase();
 
             if( match in data )
             {

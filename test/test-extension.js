@@ -1,5 +1,5 @@
-const assert = require('assert');
-const puppeteer = require('puppeteer');
+import assert from 'assert';
+import puppeteer from 'puppeteer';
 
 const extensionPath = process.cwd() + "/dist";
 const urlPath = "file://" + process.cwd() + "/test/test-extension-"

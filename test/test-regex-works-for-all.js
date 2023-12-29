@@ -1,9 +1,7 @@
-const expect = require('chai').expect;
-const assert = require('chai').assert;
-const fs = require('fs');
-const replacer = require('../src/replace');
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
+import {expect, assert} from 'chai';
+import fs from 'fs';
+import { replaceDistilleryNames, regex } from '../src/replace.js';
+import JSDOM from 'jsdom';
 
 describe('Regex Covers All Defined Keys', function () {
     let json = undefined;
@@ -18,8 +16,8 @@ describe('Regex Covers All Defined Keys', function () {
             let hypotheticalRelease = key + ".150";
             console.log( "hypotheticalRelease=" + hypotheticalRelease);
 
-            let match = hypotheticalRelease.match( replacer.regex );
-            console.log( "regex=", replacer.regex, "; match=", match);
+            let match = hypotheticalRelease.match( regex );
+            console.log( "regex=", regex, "; match=", match);
 
             expect(match).to.be.an('array').and.to.have.lengthOf(2);
             expect(match[0]).to.equal(hypotheticalRelease);

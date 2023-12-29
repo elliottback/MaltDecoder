@@ -1,8 +1,12 @@
-const path = require('path');
-const axios = require('axios');
-const CopyPlugin = require("copy-webpack-plugin");
-const ZipPlugin = require('zip-webpack-plugin');
-const webpack = require('webpack');
+import path from 'path';
+import axios from 'axios';
+import CopyPlugin from 'copy-webpack-plugin';
+import ZipPlugin from 'zip-webpack-plugin';
+import webpack from 'webpack';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const saveFile = class SaveRemoteFilePlugin {
     constructor(options) {
@@ -41,7 +45,7 @@ const saveFile = class SaveRemoteFilePlugin {
     }
 };
 
-module.exports = (env) => {
+export default (env) => {
 
     // determine which chrome plugins manifest to use
     var manifest = "";
@@ -69,6 +73,15 @@ module.exports = (env) => {
             extensions: [".js"]
         },
 
+        module: {
+            rules: [{
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            }]
+        },
         plugins: [
             new saveFile([
                 {

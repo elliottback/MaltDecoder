@@ -1,9 +1,7 @@
-const expect = require('chai').expect;
-const assert = require('chai').assert;
-const fs = require('fs');
-const replacer = require('../src/replace');
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
+import {expect, assert} from 'chai';
+import fs from 'fs';
+import { replaceDistilleryNames } from '../src/replace.js';
+import { JSDOM } from 'jsdom';
 
 describe('data.json', function () {
     let json = undefined;
@@ -24,7 +22,7 @@ describe('data.json', function () {
             let dom = new JSDOM( h.replace("%REPLACE%", input) );
             global.document = dom.window.document;
 
-            replacer.replaceDistilleryNames( json );
+            replaceDistilleryNames( json );
 
             let result = document.querySelector(selector);
             assert.include( result.textContent, expected );
