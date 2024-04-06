@@ -38,7 +38,7 @@ jobs:
         run: npm run ci
 
       - name: Run headful puppeteer tests
-        uses: elliottback/puppeteer-headful@20.12.0
+        uses: elliottback/puppeteer-headful@20.12.0.0
         with:
           args: npm test
 
