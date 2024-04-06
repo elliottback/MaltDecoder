@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 20.12.0 ]
+        node-version: [ 20.x ]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,7 +38,7 @@ jobs:
         run: npm run ci
 
       - name: Run headful puppeteer tests
-        uses: mujo-code/puppeteer-headful@${{ matrix.node-version }}
+        uses: mujo-code/puppeteer-headful@20.12.0
         with:
           args: npm test
 
