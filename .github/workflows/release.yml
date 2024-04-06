@@ -31,6 +31,8 @@ jobs:
 
       - name: Install stuff
         run: npm ci
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'true'
 
       - name: build
         run: npm run ci
