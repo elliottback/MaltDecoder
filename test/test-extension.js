@@ -3,6 +3,7 @@ import puppeteer from 'puppeteer';
 
 const extensionPath = process.cwd() + "/dist";
 const urlPath = "file://" + process.cwd() + "/test/test-extension-"
+const gotoOpts = {waitUntil: ['domcontentloaded', "networkidle2"]};
 
 let page = null;
 let browser = null;
@@ -35,7 +36,7 @@ describe('Extension UI Testing', function() {
 	describe('Page rewrite', async function() {
 	    // JAPAN
 		it('Rewrite target 1', async function() {
-		    await page.goto(urlPath + "1.html");
+		    await page.goto(urlPath + "1.html", gotoOpts);
             const element = await page.waitForSelector("h1");
             const value = await element.evaluate(el => el.textContent);
 			assert.equal(value, '105.31 (Tormore, Speyside)');
@@ -43,7 +44,7 @@ describe('Extension UI Testing', function() {
 		});
 
         it('Rewrite target 2', async function() {
-            await page.goto(urlPath + "2.html");
+            await page.goto(urlPath + "2.html", gotoOpts);
             const element = await page.waitForSelector(".product-box--title");
             const value = await element.evaluate(el => el.textContent);
             assert.equal(value, '68.59 (Blair Athol, Highlands)');
@@ -51,7 +52,7 @@ describe('Extension UI Testing', function() {
         });
 
         it('Rewrite target 6', async function() {
-            await page.goto(urlPath + "6.html");
+            await page.goto(urlPath + "6.html", gotoOpts);
             const element = await page.waitForSelector(".product-box--title");
             const value = await element.evaluate(el => el.textContent);
             assert.equal(value, '151.3 (Mackmyra, Sweden)');
@@ -60,7 +61,7 @@ describe('Extension UI Testing', function() {
 
         // USA
         it('Rewrite target 3', async function() {
-            await page.goto(urlPath + "3.html");
+            await page.goto(urlPath + "3.html", gotoOpts);
             const element = await page.waitForSelector("h1");
             const value = await element.evaluate(el => el.textContent);
             assert.equal(value, '7.264 (Longmorn, Speyside)');
@@ -69,7 +70,7 @@ describe('Extension UI Testing', function() {
 
         // UK
         it('Rewrite target 4', async function() {
-            await page.goto(urlPath + "4.html");
+            await page.goto(urlPath + "4.html", gotoOpts);
             const element = await page.waitForSelector(".caskNo");
             const value = await element.evaluate(el => el.textContent);
             assert.equal(value, '6.55 (Glen Deveron / Macduff, Speyside)');
@@ -77,7 +78,7 @@ describe('Extension UI Testing', function() {
         })
 
         it('Rewrite target 5', async function() {
-            await page.goto(urlPath + "5.html");
+            await page.goto(urlPath + "5.html", gotoOpts);
             const element = await page.waitForSelector(".caskNo");
             const value = await element.evaluate(el => el.textContent);
             assert.equal(value, '4.305 (Highland Park, Highlands)');
