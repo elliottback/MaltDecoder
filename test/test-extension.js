@@ -29,6 +29,7 @@ describe('Extension UI Testing', function() {
 
 	before(async function() {
 		await boot();
+		await new Promise(r => setTimeout(r, 5000));
 	});
 
 	describe('Page rewrite', async function() {
