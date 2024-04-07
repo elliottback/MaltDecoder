@@ -5,7 +5,8 @@ const selectors = [
     ".caskNo",                              // SMWS UK - Individual Product Recommendations
     "h1.page-title",                        // SMWS USA - title
     "div.product-description > p > strong", // SMWS USA - desc
-    "span.search-title"                     // SMWS USA - search desc
+    "span.search-title",                    // SMWS USA - search desc
+    "p.caskNo"                              // SMWS USA - archive page
 ];
 
 // 6 digits here is not 100% future-proof

@@ -8,7 +8,8 @@ describe('data.json', function () {
 
     const html = {
         '<p class="product-page--title flush"><span class="new">NEW</span> %REPLACE%</p>': 'p',
-        '<h1 class="product-page--title inline-title flush"> %REPLACE%</h1>': 'h1'
+        '<h1 class="product-page--title inline-title flush"> %REPLACE%</h1>': 'h1',
+        '<p class="caskNo">CASK NO. %REPLACE%</p>': 'p'
     };
 
     before( function() {
@@ -40,4 +41,8 @@ describe('data.json', function () {
     it( '40 or 140', function(){
         driver("40.1", "40.1 (Balvenie, Speyside)");
     });
+
+    it( 'USA archives', function(){
+        driver( "149.4", "149.4 (Ardnamurchan, Highland)");
+    } );
 });
