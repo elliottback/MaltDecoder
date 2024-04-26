@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download artifact smws codes
-        uses: dsaltares/fetch-gh-release-asset@1.1.1
+        uses: dsaltares/fetch-gh-release-asset@1.1.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           file: "data.json"
@@ -62,7 +62,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download artifact smws codes
-        uses: dsaltares/fetch-gh-release-asset@1.1.1
+        uses: dsaltares/fetch-gh-release-asset@1.1.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           file: "data.json"
