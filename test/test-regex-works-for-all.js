@@ -18,7 +18,7 @@ describe('Regex Covers All Defined Keys', function () {
             let match = hypotheticalRelease.match( regex );
             console.log( "regex=", regex, "; match=", match);
 
-            expect(match).to.be.an('array').and.to.have.lengthOf(2);
+            expect(match).to.be.an('array').and.to.have.lengthOf(3);
             expect(match[0]).to.equal(hypotheticalRelease);
             expect(match[1]).to.equal(key);
         }
