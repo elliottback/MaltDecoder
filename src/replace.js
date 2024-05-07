@@ -10,7 +10,7 @@ const selectors = [
 ];
 
 // 6 digits here is not 100% future-proof
-const localRegex = /([GABCNRW]{0,2}\d{1,3})\.\d{1,6}/i
+const localRegex = /([GABCNRW]{0,2}\d{1,3})(\.\d{1,6})?/i
 
 export const regex = localRegex;
 
