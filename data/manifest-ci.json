@@ -1,10 +1,11 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Malt Decoder",
   "version": "0.0.1",
   "description": "CI manifest ONLY!",
   "homepage_url": "https://github.com/elliottback/MaltDecoder",
-  "permissions": [ "<all_urls>" ],
+  "permissions": [],
+  "host_permissions": [ "<all_urls>" ],
   "browser_action": {
     "default_title": "Malt Decoder (CI ONLY)"
   },
@@ -16,6 +17,11 @@
     }
   ],
   "web_accessible_resources": [
-    "data.json"
+    {
+      "resources": [ "data.json" ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
   ]
 }

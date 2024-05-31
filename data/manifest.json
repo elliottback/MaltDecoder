@@ -1,12 +1,13 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Malt Decoder",
   "version": "0.0.2",
   "description": "Decode Whisky names on SMWS (Single Malt Whisky Society) UK and JP pages",
   "homepage_url": "https://github.com/elliottback/MaltDecoder",
 
   // For a list of possibilities, see https://developer.chrome.com/extensions/declare_permissions
-  "permissions": [
+  "permissions": [],
+  "host_permissions": [
     "http://*.smwsjapan.com/*",
     "https://*.smwsjapan.com/*",
     "http://*.smws.com/*",
@@ -35,6 +36,16 @@
     }
   ],
   "web_accessible_resources": [
-    "data.json"
+    {
+      "resources": [ "data.json" ],
+      "matches": [
+        "http://*.smwsjapan.com/*",
+        "https://*.smwsjapan.com/*",
+        "http://*.smws.com/*",
+        "https://*.smws.com/*",
+        "http://*.smwsa.com/*",
+        "https://*.smwsa.com/*"
+      ]
+    }
   ]
 }
