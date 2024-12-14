@@ -24,6 +24,11 @@ jobs:
       - name: Install the latest version of uv
         uses: astral-sh/setup-uv@v4
 
+      - name: Run zizmor 🌈 for output
+        run: uvx zizmor --format plain --no-exit-codes .
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Run zizmor 🌈
         run: uvx zizmor --format sarif . > results.sarif
         env:

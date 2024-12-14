@@ -15,6 +15,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Download artifact smws codes
         uses: dsaltares/fetch-gh-release-asset@1.1.2
@@ -60,6 +61,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Download artifact smws codes
         uses: dsaltares/fetch-gh-release-asset@1.1.2
