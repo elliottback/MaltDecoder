@@ -41,7 +41,7 @@
     "nanoid": ">=5.1.5",
     "nyc": "^17.1.0",
     "puppeteer": "^24.7.2",
-    "webpack": "^5.99.6",
+    "webpack": "^5.99.7",
     "webpack-cli": "^6.0.1",
     "zip-webpack-plugin": "^4.0.3"
   },
