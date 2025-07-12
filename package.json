@@ -33,7 +33,7 @@
     "@babel/preset-env": "^7.28.0",
     "axios": "^1.10.0",
     "babel-loader": "^10.0.0",
-    "chai": "^5.2.0",
+    "chai": "^5.2.1",
     "copy-webpack-plugin": "^13.0.0",
     "jsdom": "^26.1.0",
     "lodash": "^4.17.21",
