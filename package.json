@@ -34,7 +34,7 @@
     "axios": "^1.11.0",
     "babel-loader": "^10.0.0",
     "chai": "^5.2.1",
-    "copy-webpack-plugin": "^13.0.0",
+    "copy-webpack-plugin": "^13.0.1",
     "jsdom": "^26.1.0",
     "lodash": "^4.17.21",
     "mocha": "^11.7.1",
