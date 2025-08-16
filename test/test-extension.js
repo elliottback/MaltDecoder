@@ -30,63 +30,65 @@ describe('Extension UI Testing', function() {
 
 	before(async function() {
 		await boot();
-		await new Promise(r => setTimeout(r, 5000));
 	});
 
 	describe('Page rewrite', async function() {
-	    // JAPAN
-		it('Rewrite target 1', async function() {
-		    await page.goto(urlPath + "1.html", gotoOpts);
-            const element = await page.waitForSelector("h1");
-            const value = await element.evaluate(el => el.textContent);
-			assert.equal(value, '105.31 (Tormore, Speyside)');
-			await page.screenshot({ path: extensionPath + `/test-extension-1.png` });
-		});
+        /**
+         * Waits for an element's textContent to match the expected text.
+         * This is more reliable for dynamic content changes than waiting for the selector alone.
+         * @param {string} selector - The CSS selector for the element.
+         * @param {string} text - The expected text content.
+         */
+        const waitForText = (selector, text) => {
+            return page.waitForFunction(
+                (sel, txt) => document.querySelector(sel)?.textContent === txt,
+                {}, // Options like timeout can be passed here
+                selector,
+                text
+            );
+        };
+
+        // JAPAN
+        it('Rewrite target 1', async function() {
+            await page.goto(urlPath + "1.html", gotoOpts);
+            await waitForText('h1', '105.31 (Tormore, Speyside)');
+            await page.screenshot({ path: extensionPath + `/test-extension-1.png` });
+        });
 
         it('Rewrite target 2', async function() {
             await page.goto(urlPath + "2.html", gotoOpts);
-            const element = await page.waitForSelector(".product-box--title");
-            const value = await element.evaluate(el => el.textContent);
-            assert.equal(value, '68.59 (Blair Athol, Highlands)');
+            await waitForText('.product-box--title', '68.59 (Blair Athol, Highlands)');
             await page.screenshot({ path: extensionPath + `/test-extension-2.png` });
         });
 
         it('Rewrite target 6', async function() {
             await page.goto(urlPath + "6.html", gotoOpts);
-            const element = await page.waitForSelector(".product-box--title");
-            const value = await element.evaluate(el => el.textContent);
-            assert.equal(value, '151.3 (Mackmyra, Sweden)');
+            await waitForText('.product-box--title', '151.3 (Mackmyra, Sweden)');
             await page.screenshot({ path: extensionPath + `/test-extension-6.png` });
         })
 
         // USA
         it('Rewrite target 3', async function() {
             await page.goto(urlPath + "3.html", gotoOpts);
-            const element = await page.waitForSelector("h1");
-            const value = await element.evaluate(el => el.textContent);
-            assert.equal(value, '7.264 (Longmorn, Speyside)');
+            await waitForText('h1', '7.264 (Longmorn, Speyside)');
             await page.screenshot({ path: extensionPath + `/test-extension-3.png` });
         });
 
         // UK
         it('Rewrite target 4', async function() {
             await page.goto(urlPath + "4.html", gotoOpts);
-            const element = await page.waitForSelector(".caskNo");
-            const value = await element.evaluate(el => el.textContent);
-            assert.equal(value, '6.55 (Glen Deveron / Macduff, Speyside)');
+            await waitForText('.caskNo', '6.55 (Glen Deveron / Macduff, Speyside)');
             await page.screenshot({ path: extensionPath + `/test-extension-4.png` });
         })
 
         it('Rewrite target 5', async function() {
             await page.goto(urlPath + "5.html", gotoOpts);
-            const element = await page.waitForSelector(".caskNo");
-            const value = await element.evaluate(el => el.textContent);
-            assert.equal(value, '4.305 (Highland Park, Highlands)');
+            await waitForText('.caskNo', '4.305 (Highland Park, Highlands)');
             await page.screenshot({ path: extensionPath + `/test-extension-5.png` });
         })
-	});
+    });
 
-	after(async function() {
-		await browser.close(); // comment for dev
-	});
+    after(async function() {
+        await browser.close(); // comment for dev
+    });
 });
