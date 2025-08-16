@@ -17,7 +17,7 @@ async function boot() {
         // devtools: true,                                  // Enable DevTools for debugging
         args: [
           `--no-sandbox`,									//Required for this to work in github CI environment
-          `--start-maximized``,                             // this flag maximizes the browser window
+          `--start-maximized`,                              // this flag maximizes the browser window
           `--display=${process.env.DISPLAY ?? ':0'}`,       // fix for LXDE desktops
           `--disable-extensions-except=${extensionPath}`,
           `--load-extension=${extensionPath}`
