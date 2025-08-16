@@ -39,6 +39,11 @@ jobs:
       - name: Install chrome
         run: npx @puppeteer/browsers install chrome@stable
 
+      - name: Start Xvfb
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 &
+          export DISPLAY=:99
+
       - name: Run headful puppeteer tests
         run: npm test
 

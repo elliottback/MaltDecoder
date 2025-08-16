@@ -14,7 +14,7 @@ async function boot() {
     browser = await puppeteer.launch({
         executablePath: process.env.PUPPETEER_EXEC_PATH, 	// set by docker container in github CI environment
         headless: false, 									// extension are allowed only in headful mode
-        // devtools: true,                                     // Enable DevTools for debugging
+        // devtools: true,                                  // Enable DevTools for debugging
         args: [
           `--no-sandbox`,									//Required for this to work in github CI environment
           `--disable-extensions-except=${extensionPath}`,
