@@ -2,6 +2,8 @@ const selectors = [
     "span.product-box--title",              // SMWS Japan - browsing grid
     "p.product-page--title",                // SMWS Japan - individual product
     "h1.product-page--title",               // SMWS Japan - new individual product
+    "h3.c-product-body__title-name > a",    // 2025 SMWS Japan site
+    "h1.p-productDetaiMain-head__title-name", // 2025 SMWS Japan site - individual product
     ".caskNo",                              // SMWS UK - Individual Product Recommendations
     "h1.page-title",                        // SMWS USA - title
     "div.product-description > p > strong", // SMWS USA - desc

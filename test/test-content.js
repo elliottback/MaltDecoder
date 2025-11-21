@@ -46,3 +46,33 @@ describe('data.json', function () {
         driver( "149.4", "149.4 (Ardnamurchan, Highland)");
     } );
 });
+
+describe('SMWS Japan 2025', function () {
+    let json = undefined;
+
+    before( function() {
+        json = JSON.parse( fs.readFileSync( './dist/data.json', 'utf8') );
+    } );
+
+    it( 'should have the distillery name', function(){
+        const html = `<h3 class="c-product-body__title-name"><a href="https://smwsjapan.com/36%EF%BC%8E230/product/036230/"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">36.230</font></font></a></h3>`;
+        let dom = new JSDOM( html );
+        global.document = dom.window.document;
+
+        replaceDistilleryNames( json );
+
+        let result = document.querySelector( "h3.c-product-body__title-name > a" );
+        assert.include( result.textContent, "36.230 (Benrinnes, Speyside)" );
+    } );
+
+    it( 'should have the distillery name on individual product page', function(){
+        const html = `<div class="p-productDetaiMain-head p-productDetaiMain-title"><div class="p-productDetaiMain-head__status"><ul class="c-product-sIcon"><li class="c-product-sIcon__item"><img src="https://smwsjapan.com/assets/img/product/product_icon1.png"></li><!--v-if--></ul></div><div class="p-productDetaiMain-head__title"><p class="p-productDetaiMain-head__flavor" data-flavor="5"><span class="p-productDetaiMain-head__flavor-name"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Deep, Rich &amp; Dried Fruits</font></font></span></p><h1 class="p-productDetaiMain-head__title-name"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">76.156</font></font></h1></div></div>`;
+        let dom = new JSDOM( html );
+        global.document = dom.window.document;
+
+        replaceDistilleryNames( json );
+
+        let result = document.querySelector( "h1.p-productDetaiMain-head__title-name" );
+        assert.include( result.textContent, "76.156 (Mortlach, Speyside)" );
+    } );
+});
