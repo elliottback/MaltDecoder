@@ -42,7 +42,7 @@ jobs:
         npm test
 
     - name: Archive  artifacts
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       if: always()
       with:
         name: dist
