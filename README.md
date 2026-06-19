@@ -39,3 +39,7 @@ This extension will request the ability to inspect/modify content on SMWS HTTP/s
 # Build & Test
 
 Just run `npm run ci` before `npm test`
+
+# Install locally
+
+You can install the plugin locally from your `.\dist` after running `npm run build`.
