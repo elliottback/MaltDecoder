@@ -6,9 +6,6 @@
   "homepage_url": "https://github.com/elliottback/MaltDecoder",
   "permissions": [],
   "host_permissions": [ "<all_urls>" ],
-  "browser_action": {
-    "default_title": "Malt Decoder (CI ONLY)"
-  },
   "content_scripts": [
     {
       "matches": [ "file://*" ],
