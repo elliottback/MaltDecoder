@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Chrome plugin to decode SMWS codes on the UK and JP sites",
   "type": "module",
-  "puppeteerChrome": "152.0.7977.82",
   "directories": {
     "test": "test"
   },

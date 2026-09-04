@@ -37,20 +37,14 @@ jobs:
         run: npm ci --ignore-scripts
 
       - name: build
-        run: npm run ci
-
-      - name: Read chrome version
-        id: chrome_version
-        run: |
-          chrome=$(node -e "console.log(require('./package.json').puppeteerChrome)")
-          echo "chrome=$chrome" >> $GITHUB_OUTPUT
+        run: npm run ci --ignore-scripts
 
       - name: Install chrome
-        run: npx --no-install @puppeteer/browsers install chrome@${{ steps.chrome_version.outputs.chrome }}
+        run: npx --no-install @puppeteer/browsers install chrome@152.0.7977.82
 
       - name: Start Xvfb and Test
         env:
-          PUPPETEER_EXEC_PATH: ${{ github.workspace }}/chrome/linux-${{ steps.chrome_version.outputs.chrome }}/chrome-linux64/chrome
+          PUPPETEER_EXEC_PATH: ${{ github.workspace }}/chrome/linux-152.0.7977.82/chrome-linux64/chrome
         run: |
           Xvfb :99 -screen 0 1920x1080x24 &
           export DISPLAY=:99

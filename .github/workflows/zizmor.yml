@@ -27,7 +27,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install zizmor
-        run: python -m pip install --upgrade pip && python -m pip install zizmor==1.30.0
+        run: python -m pip install --no-cache-dir zizmor==1.30.0
 
       - name: Run zizmor 🌈 for output
         run: zizmor --format plain --no-exit-codes .
