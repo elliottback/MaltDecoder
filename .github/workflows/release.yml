@@ -41,7 +41,9 @@ jobs:
 
       - name: Read chrome version
         id: chrome_version
-        run: echo "chrome=$(node -p \"require('./package.json').puppeteerChrome\")" >> $GITHUB_OUTPUT
+        run: |
+          chrome=$(node -e "console.log(require('./package.json').puppeteerChrome)")
+          echo "chrome=$chrome" >> $GITHUB_OUTPUT
 
       - name: Install chrome
         run: npx --no-install @puppeteer/browsers install chrome@${{ steps.chrome_version.outputs.chrome }}
