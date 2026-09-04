@@ -43,7 +43,8 @@
     "puppeteer": "^25.9.0",
     "webpack": "^5.110.2",
     "webpack-cli": "^7.2.3",
-    "zip-webpack-plugin": "^4.0.3"
+    "zip-webpack-plugin": "^4.0.3",
+    "semantic-release": "25.0.9"
   },
   "overrides": {
     "@istanbuljs/load-nyc-config": {
