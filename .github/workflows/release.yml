@@ -39,8 +39,12 @@ jobs:
       - name: build
         run: npm run ci
 
+      - name: Read chrome version
+        id: chrome_version
+        run: echo "chrome=$(node -p \"require('./package.json').puppeteerChrome\")" >> $GITHUB_OUTPUT
+
       - name: Install chrome
-        run: npm exec -- @puppeteer/browsers install chrome@152.0.7977.82
+        run: npx --no-install @puppeteer/browsers install chrome@${{ steps.chrome_version.outputs.chrome }}
 
       - name: Start Xvfb and Test
         run: |
@@ -94,4 +98,4 @@ jobs:
       - name: Release
         env:
           GH_TOKEN: ${{ secrets.PAT }}
-        run: npm exec -- semantic-release
+        run: npx --no-install semantic-release

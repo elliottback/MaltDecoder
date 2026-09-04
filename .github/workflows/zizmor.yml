@@ -21,16 +21,21 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install the latest version of uv
-        uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install zizmor
+        run: python -m pip install --upgrade pip && python -m pip install zizmor==1.30.0
 
       - name: Run zizmor 🌈 for output
-        run: uvx --no-build zizmor==1.30.0 --format plain --no-exit-codes .
+        run: zizmor --format plain --no-exit-codes .
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run zizmor 🌈 (SARIF)
-        run: uvx --no-build zizmor==1.30.0 --format sarif . > results.sarif
+        run: zizmor --format sarif . > results.sarif
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
