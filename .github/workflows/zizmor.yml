@@ -24,16 +24,13 @@ jobs:
       - name: Install the latest version of uv
         uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d
 
-      - name: Install pinned Python dependencies
-        run: uv sync --locked
-
       - name: Run zizmor 🌈 for output
-        run: uv run zizmor --format plain --no-exit-codes .
+        run: uvx zizmor --format plain --no-exit-codes .
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run zizmor 🌈 (SARIF)
-        run: uv run zizmor --format sarif . > results.sarif
+        run: uvx zizmor --format sarif . > results.sarif
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
