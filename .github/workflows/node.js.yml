@@ -35,7 +35,7 @@ jobs:
       run: npm run ci
 
     - name: Install chrome
-      run: npx @puppeteer/browsers install chrome@152.0.7977.82
+      run: npm exec -- @puppeteer/browsers install chrome@152.0.7977.82
 
     - name: Start Xvfb and Test
       run: |
