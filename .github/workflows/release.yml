@@ -67,6 +67,9 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
+    strategy:
+      matrix:
+        node-version: [ 26.x ]
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
