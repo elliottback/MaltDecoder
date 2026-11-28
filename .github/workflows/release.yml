@@ -65,6 +65,8 @@ jobs:
     needs: [ "release-test" ]
     permissions:
       contents: write
+      issues: write
+      pull-requests: write
     strategy:
       matrix:
         node-version: [ 26.x ]
