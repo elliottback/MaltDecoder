@@ -2,6 +2,8 @@ name: Node.js CI
 
 on: [pull_request]
 
+permissions: {}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,12 +13,12 @@ jobs:
       matrix:
         node-version: [24.x]
     steps:
-    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+    - uses: actions/checkout@v7.0.1
       with:
         persist-credentials: false
 
     - name: Download artifact smws codes
-      uses: ash-shepard/fetch-gh-release-asset@464698915cc02d0a498c92cbeb98312234a8f9b9
+      uses: ash-shepard/fetch-gh-release-asset@v1.0.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         file: "data.json"
@@ -24,7 +26,7 @@ jobs:
         target: "./data.json"
 
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+      uses: actions/setup-node@v7.1.0
       with:
         node-version: ${{ matrix.node-version }}
 
@@ -46,7 +48,7 @@ jobs:
         npm test
 
     - name: Archive  artifacts
-      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+      uses: actions/upload-artifact@v7.0.2
       if: always()
       with:
         name: dist

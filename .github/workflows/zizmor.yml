@@ -1,10 +1,15 @@
 name: GitHub Actions Security Analysis with zizmor 🌈
 
+permissions: {}
+
 on:
   push:
     branches: [ "main", "master"]
   pull_request:
     branches: ["**"]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   zizmor:
@@ -17,30 +22,38 @@ jobs:
       actions: read
     steps:
       - name: Checkout repository
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
 
-      - name: Setup Python
-        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
-        with:
-          python-version: '3.x'
-
-      - name: Install zizmor
-        run: python -m pip install --no-cache-dir zizmor==1.30.0
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v8.0.0
 
       - name: Run zizmor 🌈 for output
-        run: zizmor --format plain --no-exit-codes .
+        run: uvx zizmor --format plain --no-exit-codes .
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run zizmor 🌈 (SARIF)
-        run: zizmor --format sarif . > results.sarif
+        run: uvx zizmor --format sarif . > results.sarif
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@9b3254085494b55a0f7c4c2b3d2d52cc712ce370 # v4.39.1
+        uses: github/codeql-action/upload-sarif@v4.39.1
         with:
           sarif_file: results.sarif
           category: zizmor
+
+  lockfile:
+    runs-on: ubuntu-slim
+    permissions:
+      contents: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - run: gh extension install github/gh-actions-lock --pin v0.4.1
+      - run: gh actions-lock --verify

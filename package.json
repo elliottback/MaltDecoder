@@ -54,7 +54,9 @@
     "serialize-javascript": "^7.0.5",
     "diff": "^8.0.3",
     "sprintf-js": "^1.1.3",
-    "minimatch": "^11.0.5"
+    "minimatch": "^11.0.5",
+    "glob": "^14.0.2",
+    "@semantic-release/npm": "npm:@semantic-release/commit-analyzer@^13.0.1"
   },
   "release": {
     "branches": [
